@@ -1,0 +1,12 @@
+{
+    "cours": [
+      {
+        "titre": "Java 1 : Fondamentaux de la POO",
+        "module": "Bonjour",
+        "intervenant": "Bonjour ! Comment puis-je vous aider ?",
+        "description":"lorem machin",
+        "autre":"site.com"
+      }
+    ]
+  }
+  
