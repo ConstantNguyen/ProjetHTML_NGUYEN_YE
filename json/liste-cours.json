@@ -1,12 +1,48 @@
 {
-    "cours": [
-      {
-        "titre": "Java 1 : Fondamentaux de la POO",
-        "module": "Bonjour",
-        "intervenant": "Bonjour ! Comment puis-je vous aider ?",
-        "description":"lorem machin",
-        "autre":"site.com"
-      }
-    ]
-  }
+  "cours": [
+    {
+      "titre": "Bases de données 1 : Concepts de base",
+      "module": "TI503N-2526PSA01",
+      "intervenant": "Lena TREBAUL",
+      "description":"Être capable de créer une base de données de A à Z : analyser les besoins, concevoir un modèle conceptuel cohérent, puis le traduire en modèles logique et physique. Savoir appliquer les bonnes pratiques de conception d’un système d’information, notamment les règles de normalisation. Être en mesure d’exploiter une base de données pour répondre à des problématiques concrètes à travers la rédaction de requêtes d’interrogation.",
+      "autre":"site.com"
+    },
+    {
+      "titre": "Programmation Web 1 : HTML, CSS, JS",
+      "module": "TI504N-2526PSA01",
+      "intervenant": "Mohamed HAMIDI",
+      "description":"L’objectif de ce module est de comprendre les technologies et protocoles du Web, d’en découvrir les évolutions, et de maîtriser les standards HTML5, CSS3 et les bases de JavaScript pour créer des pages Web dynamiques. Il introduit également les outils essentiels du développement Web moderne côté client. L’apprentissage repose principalement sur des travaux pratiques favorisant l’autonomie.",
+      "autre":"site.com"
+    },
+    {
+      "titre": "Java 1 : Fondamentaux de la POO",
+      "module": "TI505N-2526PSA01",
+      "intervenant": "Cherifa BEN KHELIL",
+      "description":"Acquérir une compréhension des bases de la programmation en langage Java, en mettant l'accent sur les concepts de la programmation orientée objet (POO).",
+      "autre":"site.com"
+    },
+    {
+      "titre": "Introduction au système Linux",
+      "module": "TI507N-2526PSA01",
+      "intervenant": "Yvan GUIFO",
+      "description":"Ce cours est une introduction au concept de système d'exploitation, et en particulier aux systèmes d'exploitation basés sur GNU/Linux. Vous découvrirez la philosophie, le fonctionnement, les composants de base et les outils puissants présents sur les systèmes GNU/Linux à travers l'une de ses distributions : Debian.",
+      "autre":"site.com"
+    },    
+    {
+      "titre": "Les fondamentaux du Cloud Computing",
+      "module": "TI609N-2526PSP01",
+      "intervenant": "BEN KHELIL Cherifa",
+      "description":"Faire du cloud computing",
+      "autre":"site.com"
+    },
+    {
+      "titre": "Introduction à la cybersécurité",
+      "module": "TI530-2526PSA01",
+      "intervenant": "Yaovi SOGLO",
+      "description":"Faire de la cybersécurité",
+      "autre":"site.com"
+    }
+
+  ]
+}
   

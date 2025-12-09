@@ -1,63 +1,79 @@
-$(document).ready(function() {
-    // Au survol de cours-container
-    $('.cours-container').hover(function() {
-        let descriptionContainer = $(this).find('.description-container');
-        let descriptionContent = descriptionContainer.find('.description-content');
-        if (descriptionContent.height() >= 130) {
-            descriptionContent.addClass('defilement');
-        }
-    }, function() {
-        $(this).find('.description-content').removeClass('defilement');
-    });
+document.addEventListener("DOMContentLoaded", () => {
 
-    $('#CategorieFiltre').change(function() {
+    document.querySelectorAll(".cours-container").forEach(container => {
 
-        let categorieValue = $(this).val();
+        container.addEventListener("mouseenter", () => {
+            const descriptionContainer = container.querySelector(".description-container");
+            const descriptionContent = descriptionContainer.querySelector(".description-content");
 
-        if (categorieValue !== "" && !filtreExisteDeja(categorieValue)) {
-
-            let nouveauFiltre = $('<span>', {
-                class: 'filtre-actif'
-            });
-
-            nouveauFiltre.append($('<span>', {text: categorieValue}));
-
-            let croixSuppression = $('<i>', {
-                class: 'fa-solid fa-xmark croix-suppression',
-                text: ''
-            });
-
-            croixSuppression.click(function() {
-                $(this).parent().remove(); 
-            });
-
-
-            nouveauFiltre.append(croixSuppression);
-
-            $('#FiltresActifs').append(nouveauFiltre);
-        }
-    });
-
-
-    function filtreExisteDeja(nouveauFiltre) {
-        let filtresActifs = $('#FiltresActifs .filtre-actif span');
-        let existeDeja = false;
-
-        filtresActifs.each(function() {
-            if ($(this).text() === nouveauFiltre) {
-                existeDeja = true;
-                return false; 
+            if (descriptionContent.offsetHeight >= 130) {
+                descriptionContent.classList.add("defilement");
             }
         });
 
-        return existeDeja;
+        container.addEventListener("mouseleave", () => {
+            const descriptionContent = container.querySelector(".description-content");
+            descriptionContent.classList.remove("defilement");
+        });
+    });
+
+
+    const categorieSelect = document.getElementById("CategorieFiltre");
+    const filtresActifs = document.getElementById("FiltresActifs");
+
+    categorieSelect.addEventListener("change", () => {
+        const categorieValue = categorieSelect.value;
+
+        if (categorieValue !== "" && !filtreExisteDeja(categorieValue)) {
+
+            // création du span filtre
+            const nouveauFiltre = document.createElement("span");
+            nouveauFiltre.classList.add("filtre-actif");
+
+            // texte
+            const texte = document.createElement("span");
+            texte.textContent = categorieValue;
+
+            // icône de suppression
+            const croix = document.createElement("i");
+            croix.classList.add("fa-solid", "fa-xmark", "croix-suppression");
+
+            // suppression au clic
+            croix.addEventListener("click", () => {
+                nouveauFiltre.remove();
+            });
+
+            // assemblage
+            nouveauFiltre.appendChild(texte);
+            nouveauFiltre.appendChild(croix);
+
+            // ajout dans la liste
+            filtresActifs.appendChild(nouveauFiltre);
+        }
+    });
+
+
+    function filtreExisteDeja(nomFiltre) {
+        const filtres = document.querySelectorAll("#FiltresActifs .filtre-actif span:first-child");
+
+        for (const f of filtres) {
+            if (f.textContent === nomFiltre) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    $('#AjouterFiltres').click(function() {
-        $('#ChoixFiltres').toggleClass('active');
+    document.getElementById("AjouterFiltres").addEventListener("click", () => {
+        document.getElementById("ChoixFiltres").classList.toggle("active");
     });
 
-    $('.cours-container').click(function() {
-        $(this).find('.carte-cours').toggleClass('turn')
+
+    document.querySelectorAll(".cours-container").forEach(container => {
+        container.addEventListener("click", () => {
+            const carte = container.querySelector(".carte-cours");
+            carte.classList.toggle("turn");
+        });
     });
+
 });

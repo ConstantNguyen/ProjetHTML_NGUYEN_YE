@@ -34,8 +34,11 @@
         <div class="navigation-onglets">
           <nav>
             <ul>
-              <li class="hover-underline-active">Equipe enseignante</li>
-              <li class="hover-underline-active">liste des cours et formations</li>
+              <a href = "apropos.html"><li class="hover-underline-active">A propos</li></a>
+              <a href = "../index.html"><li class="hover-underline-active">Accueil</li></a>
+              <a href = "coursFormations.html"><li class="hover-underline-active">Cours et formations</li></a>
+              <a href = "equipeEnseignante.html"><li class="hover-underline-active">Equipe prédagogique</li></a>
+              <a href = "contact.html"><li class="hover-underline-active">Contact</li></a>
             </ul>
           </nav>
         </div>
@@ -60,10 +63,11 @@
 
       <div class="liste-filtres">
         <div class="choix-filtres" id="ChoixFiltres">
-          <input type="text" name="villeFiltre" id="VilleFiltre" placeholder="Choisir une ville">
+          <input type="text" name="villeFiltre" id="VilleFiltre" placeholder="Choisir un intervenant">
           <select name="categorieFiltre" id="CategorieFiltre">
             <option value="">Ville</option>
             <option value="paris">Paris</option>
+            <option value="bordeaux">Bordeaux</option>
           </select>
         </div>
         <div class="filtres-actifs" id="FiltresActifs">
@@ -71,54 +75,15 @@
         </div>
       </div>
       <!-- liste des cours -->
-      <div class="liste-cours">
-
-        <div class="carte">
-          <div class="cours-container">
-            <div class="carte-cours">
-              <div class="recto">
-                <div class="identite">
-                  <img src="./../img/book-open-solid-full.svg" alt="Logo" draggable="false">
-                  <span>Java 1 : Fondamentaux de la POO</span>
-                </div>
-                <div class="tags">
-
-                  <span><i class="fa-solid fa-briefcase"></i>PROBABILITAD</span>
-                  <span><i class="fa-regular fa-circle-user ic-wm-el-header"></i></i>Cherifa BEN KHELIL</span>
-                </div>
-              </div>
-              <div class="verso">
-                <div class="description-container">
-                  <div class="description-content">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, enim consequuntur! Ad vero
-                    exercitationem quidem, nesciunt deleniti fugit odio magni. Qui officiis consequatur, explicabo autem
-                    eaque ducimus beatae earum dignissimos ?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus officiis tenetur saepe recusandae
-                    quia delectus eaque aliquid doloribus repudiandae minus. Libero assumenda dolore nostrum quam
-                    officiis quibusdam itaque nisi corporis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime quisquam facere. Rerum
-                    modi quam aut ducimus laborum, velit unde autem! Voluptate ducimus reiciendis est. Quasi autem
-                    facere ad doloribus?
-                  </div>
-                </div>
-                <div class="fin-verso">
-                  <div class="lien-site">
-                    <a href="#" class="hover-underline-active">Sopra.com</a>
-                  </div>
-                  <div class="btn-souhait">
-                    <span>En savoir plus</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="liste-cours" id="liste-cours">
+        
       </div>
     </div>
   </div>
 
   <script src="./../js/header.js"></script>
   <script src="./../js/cours.js"></script>
+  <script src="./../js/lectureJson.js"></script>
 </body>
 
 </html>

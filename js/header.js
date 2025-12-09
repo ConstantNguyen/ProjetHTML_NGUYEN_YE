@@ -1,49 +1,39 @@
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded', () => {
     let isInitial = false;
 
     function headerInitialContent() {
-        // Copier le contenu HTML de #HeaderResponsive vers #HeaderInitial et vider #HeaderResponsive
-        let headerResponsiveHTML = $('#HeaderResponsive').html();
-        $('#HeaderInitial').html(headerResponsiveHTML);
-        $('#HeaderResponsive').empty();
+        const responsive = document.getElementById('HeaderResponsive');
+        const initial = document.getElementById('HeaderInitial');
+
+        initial.innerHTML = responsive.innerHTML;
+        responsive.innerHTML = '';
         isInitial = false;
     }
 
     function headerResponsiveContent() {
-        // Copier le contenu HTML de #HeaderInitial vers #HeaderResponsive et vider #HeaderInitial
-        let headerInitialHTML = $('#HeaderInitial').html();
-        $('#HeaderResponsive').html(headerInitialHTML);
-        $('#HeaderInitial').empty();
+        const responsive = document.getElementById('HeaderResponsive');
+        const initial = document.getElementById('HeaderInitial');
+
+        responsive.innerHTML = initial.innerHTML;
+        initial.innerHTML = '';
         isInitial = true;
     }
 
-    // Fonction pour gérer le basculement du contenu entre #HeaderInitial et #HeaderResponsive
     function toggleHeaderContent() {
-        // Vérifier si la largeur de l'écran est inférieure à 1124 pixels
-        if ($(window).width() < 1124) {
-            if (!isInitial) {
-                headerResponsiveContent();
-            }
+        if (window.innerWidth < 1124) {
+            if (!isInitial) headerResponsiveContent();
         } else {
-            if (isInitial) {
-                headerInitialContent();
-            }
+            if (isInitial) headerInitialContent();
         }
     }
 
-    if ($(window).width() < 1124) {
-        toggleHeaderContent();
-    }
+    toggleHeaderContent();
 
-    // Attacher la fonction à l'événement resize de la fenêtre
-    $(window).resize(function() {
-        toggleHeaderContent();
-    });
+ 
+    window.addEventListener('resize', toggleHeaderContent);
 
-    // Attacher la fonction au clic sur #Biggachou
-    $('#Biggachou').click(function(){
-        $(this).toggleClass('eat');
-        // Toggle classes pour #HeaderResponsive
-        $('#HeaderResponsive').toggleClass('open');
+    document.getElementById('Biggachou').addEventListener('click', function () {
+        this.classList.toggle('eat');
+        document.getElementById('HeaderResponsive').classList.toggle('open');
     });
 });
