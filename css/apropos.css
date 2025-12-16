@@ -1,0 +1,99 @@
+.container {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.apropos {
+    margin-bottom: 60px;
+}
+
+.titrePage {
+    text-align: left;
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #377FBC;
+}
+
+.apropos-content {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.aproposParagraphe {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.membres {
+    margin-bottom: 60px;
+}
+
+.membres h2 {
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-left: 120px;
+}
+
+
+.membresZone {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    flex-wrap: wrap; 
+}
+
+.equipe {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #33477B;
+    text-align: left;
+    width: 40%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.equipe h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.equipe p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.membreTexte {
+    flex: 1;
+}
+
+
+/* Partie image */
+.imgMembre {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+        align-items: right;
+    width: 20%;
+}
+
+.aproposImage img{
+    flex: 1;
+    text-align: right;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    border-radius: 8px;
+}
+
+
+
+
