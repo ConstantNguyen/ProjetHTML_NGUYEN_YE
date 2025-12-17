@@ -45,6 +45,12 @@ body {
     font-family: var(--f-primaire);
     
     z-index: 0;
+
+    background-image: url('../img/Efrei_accueil_bg.jpg');
+    /* Redimensionne l'image pour couvrir toute la zone du body */
+    background-size: cover;
+    /* Centre l'image
+    background-position: center; */
 }
 
 a {
@@ -86,9 +92,25 @@ a {
 }
 
 body .container {
+  margin: 100px 4em;
     top: var(--hh-header);
     width: 100%;
     z-index: 0;
+}
+
+h1 {
+  font-size: 90px;
+  color: white;
+  font-weight: semibold;
+}
+
+h2,p {
+  color: white;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
 }
 
 input:focus {
@@ -96,7 +118,7 @@ input:focus {
 }
 
 
-*,
+*
 *:focus{
   outline: none;
 }
