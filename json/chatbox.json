@@ -1,0 +1,115 @@
+{
+  "intents": [
+    {
+      "tag": "greet",
+      "patterns": ["Bonjour", "Salut", "Coucou", "Hello", "Bonsoir"],
+      "responses": [
+        "Bonjour Je suis l'assistant EFREI. Comment puis-je vous aider ?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Au revoir", "À bientôt", "Bye", "À la prochaine"],
+      "responses": [
+        "À bientôt ! N'hésitez pas si vous avez d'autres questions"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Merci", "Merci beaucoup", "Merci pour votre aide"],
+      "responses": [
+        "Avec plaisir !"
+      ]
+    },
+    {
+      "tag": "efrei_presentation",
+      "patterns": [
+        "C'est quoi l'EFREI",
+        "Présentation de l'EFREI",
+        "EFREI Paris",
+        "Qu'est-ce que l'EFREI"
+      ],
+      "responses": [
+        "L’EFREI est une grande école d’ingénieurs du numérique située à Paris, spécialisée en informatique, data, cybersécurité, intelligence artificielle et systèmes d'information."
+      ]
+    },
+    {
+      "tag": "formations_info",
+      "patterns": [
+        "Quelles formations en informatique",
+        "Formations informatique",
+        "Cursus informatique",
+        "Études en informatique"
+      ],
+      "responses": [
+        "L’EFREI propose plusieurs formations en informatique : ingénierie logicielle, cybersécurité, data & IA, systèmes d'information et réseaux."
+      ]
+    },
+    {
+      "tag": "admissions",
+      "patterns": [
+        "Comment s'inscrire",
+        "Admissions",
+        "Candidature EFREI",
+        "Procédure d'admission"
+      ],
+      "responses": [
+        "Les admissions à l’EFREI se font via Parcoursup ou sur dossier selon le niveau d’entrée. Consultez la page Admissions pour plus de détails."
+      ]
+    },
+    {
+      "tag": "cybersecurite",
+      "patterns": [
+        "Cybersécurité",
+        "Sécurité informatique",
+        "Formation cybersécurité"
+      ],
+      "responses": [
+        "L’EFREI propose des spécialisations en cybersécurité axées sur la protection des systèmes, des réseaux et des données."
+      ]
+    },
+    {
+      "tag": "intelligence_artificielle",
+      "patterns": [
+        "Intelligence artificielle",
+        "IA",
+        "Machine learning",
+        "Data science"
+      ],
+      "responses": [
+        "Les formations en IA et Data à l’EFREI couvrent le machine learning, le big data, l’analyse de données et l’intelligence artificielle appliquée."
+      ]
+    },
+    {
+      "tag": "vie_etudiante",
+      "patterns": [
+        "Vie étudiante",
+        "Associations",
+        "Clubs étudiants",
+        "Ambiance à l'EFREI"
+      ],
+      "responses": [
+        "La vie étudiante à l’EFREI est très riche avec de nombreuses associations, événements, projets et activités étudiantes."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "Contact",
+        "Comment vous contacter",
+        "Aide",
+        "Support"
+      ],
+      "responses": [
+        "Vous pouvez nous contacter via la page <a href='contact.html'>Contact</a> pour toute demande spécifique."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "Je ne peux pas vous aider sur ce sujet. Allez sur la page <a href='../pages/contact.html'>Contact</a> afin que l'on puisse vous aider."
+      ]
+    }
+  ]
+}
