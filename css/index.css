@@ -12,34 +12,116 @@ body {
 }
 
 body .container {
-  margin: 150px 4em 0 4em;
+  margin: 0px 4em 0 4em;
+  padding: 200px 0 0 0;
   /* Permet à ce bloc de "pousser" le footer vers le bas */
   flex-grow: 1;
 }
 
-.titrePage{
-  width: 206%;
-  margin-right: 5%;
+.content-flex {
+  display: flex;
+  align-items: center;
+}
+
+.titrePage{  
+  flex: 0 0 36%;
+  padding: 0 0 0 5%;
   margin-top: 2em;
 }
 
 .presentationDepartementInfo {
-  margin: 4em 10% 10em 0;
+  flex: 0 0 50%;
+  margin: 3em 10% 10em 0;
+  padding-top: 133px;
 }
 
 .presentationDepartementInfo h2{
   color: #377FBC;
   font-size: 55px;
-  font-weight: Bold;
+  font-weight: 700;
 }
 
 .presentationDepartementInfo p{
   font-size: 25px;
-  font-weight: ExtraBold;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: 85px;
+  font-size: 80px;
   color: white;
-  font-weight: semibold;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1440px) {
+  body .container {
+    padding-top: 0;
+  }
+
+  .content-flex {
+    align-items: flex-start;
+  }
+
+  .titrePage {
+    flex: 0 0 36%;
+    margin-right: 0; /* Suppression de toute marge droite qui pourrait perturber le calcul */
+    margin-top: 2em;
+  }
+
+  .presentationDepartementInfo {
+    flex: 0 0 64%;
+    margin: 4em 0 10em 0; /* J'ai conservé 4em en haut pour l'espacement si besoin */
+  }
+
+  .presentationDepartementInfo h2{
+    color: #377FBC;
+    font-size: 55px;
+    font-weight: Bold;
+  }
+
+  .presentationDepartementInfo p{
+    font-size: 25px;
+    font-weight: ExtraBold;
+    padding-right: 17%;
+  }
+  
+  /* Réduction du titre principal */
+  h1 {
+    font-size: 60px;
+    padding-left: 60px;
+  }
+
+  /* Réduction des titres et paragraphes du département */
+  .presentationDepartementInfo h2 {
+    font-size: 40px;
+  }
+  .presentationDepartementInfo p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Réduction des marges latérales du conteneur */
+  body .container {
+    margin: 120px 2em 0 2em;
+    padding-top: 0;
+  }
+  
+  /* Réduction du titre principal */
+  h1 {
+    padding-top: 87px;
+    font-size: 52px;
+  }
+
+  .presentationDepartementInfo {
+    flex: 0 0 55%;
+    padding: 62px 0 0 60px;
+  }
+
+  /* Réduction des titres et paragraphes du département */
+  .presentationDepartementInfo h2 {
+    font-size: 32px;
+  }
+  .presentationDepartementInfo p {
+    font-size: 18px;
+  }
 }
