@@ -20,7 +20,7 @@ body .container {
 
 .content-flex {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .titrePage{  
@@ -32,7 +32,6 @@ body .container {
 .presentationDepartementInfo {
   flex: 0 0 50%;
   margin: 3em 10% 10em 0;
-  padding-top: 133px;
 }
 
 .presentationDepartementInfo h2{
@@ -47,7 +46,7 @@ body .container {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 90px;
   color: white;
   font-weight: 600;
 }
