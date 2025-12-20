@@ -1,0 +1,45 @@
+header {
+  background-color: var(--c-main-nav);
+}
+
+body {
+  background-image: url('../img/Efrei_accueil_bg.jpg');
+
+
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+body .container {
+  margin: 150px 4em 0 4em;
+  /* Permet à ce bloc de "pousser" le footer vers le bas */
+  flex-grow: 1;
+}
+
+.titrePage{
+  width: 206%;
+  margin-right: 5%;
+  margin-top: 2em;
+}
+
+.presentationDepartementInfo {
+  margin: 4em 10% 10em 0;
+}
+
+.presentationDepartementInfo h2{
+  color: #377FBC;
+  font-size: 55px;
+  font-weight: Bold;
+}
+
+.presentationDepartementInfo p{
+  font-size: 25px;
+  font-weight: ExtraBold;
+}
+
+h1 {
+  font-size: 85px;
+  color: white;
+  font-weight: semibold;
+}

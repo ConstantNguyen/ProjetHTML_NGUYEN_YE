@@ -4,6 +4,7 @@
     --c-light: #fff;
     --c-dark : #000;
     --c-primaire: #33477B;
+    --c-main-nav: rgba(51, 71, 123, 0.76);
     --c-squelette: #dadada;
 
     /* taille des espacements entre les éléments de naviguation dans le header */
@@ -45,8 +46,7 @@ body {
     font-family: var(--f-primaire);
     
     z-index: 0;
-
-    background-image: url('../img/Efrei_accueil_bg.jpg');
+    
     /* Redimensionne l'image pour couvrir toute la zone du body */
     background-size: cover;
     /* Centre l'image
@@ -96,12 +96,6 @@ body .container {
     top: var(--hh-header);
     width: 100%;
     z-index: 0;
-}
-
-h1 {
-  font-size: 90px;
-  color: white;
-  font-weight: semibold;
 }
 
 h2,p {
@@ -183,3 +177,4 @@ form{
 }
 
 .bm15{margin: 0 0 15px 0}
+
