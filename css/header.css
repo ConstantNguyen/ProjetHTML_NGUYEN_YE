@@ -64,6 +64,12 @@ header {
     margin: 0 0 0 var(--wm-el-header);
 }
 
+.hover-underline-active img {
+    width: 14px;
+    margin-right: 5px;
+    filter: grayscale(100%);
+}
+
 ul li {
     display: flex;
     align-items: center;
