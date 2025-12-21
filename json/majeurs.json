@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "nom": "DATA & ARTIFICIAL INTELLIGENCE"
+    },
+    {
+        "id": 2,
+        "nom": "DATA ENGINEERING"
+    },
+    {
+        "id": 3,
+        "nom": "BIO-INFORMATIQUE"
+    },
+    {
+        "id": 4,
+        "nom": "BUSINESS INTELLIGENCE & ANALYTICS"
+    },
+    {
+        "id": 5,
+        "nom": "INFORMATION SYSTEMS STRATEGY & GOVERNANCE"
+    },
+    {
+        "id": 6,
+        "nom": "SOFTWARE ENGINEERING"
+    },
+    {
+        "id": 7,
+        "nom": "IT FOR FINANCE"
+    },
+    {
+        "id": 8,
+        "nom": "TECHNOLOGIES IMMERSIVES & IA"
+    },
+    {
+        "id": 9,
+        "nom": "CYBERSÉCURITÉ, SI & GOUVERNANCE"
+    },
+    {
+        "id": 10,
+        "nom": "CYBERSÉCURITÉ, INFRASTRUCTURE & LOGICIELS"
+    },
+    {
+        "id": 11,
+        "nom": "CYBERSÉCURITÉ & CLOUD"
+    },
+    {
+        "id": 12,
+        "nom": "RÉSEAUX & SÉCURITÉ",
+        "highlight": true
+    },
+    {
+        "id": 13,
+        "nom": "TRANSPORTS INTELLIGENTS"
+    },
+    {
+        "id": 14,
+        "nom": "SYSTÈMES ROBOTIQUES & DRONES"
+    },
+    {
+        "id": 15,
+        "nom": "DATA & MACHINE LEARNING",
+        "highlight": true
+    },
+    {
+        "id": 16,
+        "nom": "LOGICIEL & SYSTÈMES D'INFORMATION",
+        "highlight": true
+    }
+]

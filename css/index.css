@@ -3,27 +3,49 @@ header {
 }
 
 body {
-  background-image: url('../img/Accueil/Efrei_accueil_bg.jpg');
-
-
   display: flex;
   flex-direction: column;
   max-width: 100%;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: -1;
-}
-
 body .container {
-  margin: 0 4em;
-  padding: 200px 0 0 0;
+  margin: 0;
+  padding: 0;
   /* Permet à ce bloc de "pousser" le footer vers le bas */
   flex-grow: 1;
+  display: grid;
+}
+
+section {
+  min-width: 100wh;
+  min-height: 100vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Section du visuel de la première partie de la page */
+#entreeAccueil::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+#entreeAccueil {
+  /* garde la section plein écran */
+  background-image: url('../img/Accueil/Efrei_accueil_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  padding: 200px 0 0 0;
+}
+
+#entreeAccueil>* {
+  position: relative;
+  z-index: 1;
 }
 
 .content-flex {
@@ -31,7 +53,7 @@ body .container {
   align-items: flex-start;
 }
 
-.titrePage{  
+.titrePage {
   flex: 0 0 36%;
   padding: 0 0 0 5%;
   margin-top: 2em;
@@ -42,13 +64,13 @@ body .container {
   margin: 3em 10% 10em 0;
 }
 
-.presentationDepartementInfo h2{
+.presentationDepartementInfo h2 {
   color: #377FBC;
   font-size: 55px;
   font-weight: 700;
 }
 
-.presentationDepartementInfo p{
+.presentationDepartementInfo p {
   font-size: 25px;
   font-weight: 700;
 }
@@ -59,10 +81,55 @@ h1 {
   font-weight: 600;
 }
 
+/* Section des majeurs */
+#majeurs {
+  margin: 0;
+  padding: 4em 0;
+  background-color: #0d1a33;
+  position: relative;
+  z-index: 0;
+}
+
+.titre-majeurs {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 42px;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+#majeurs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 4em;
+}
+
+.majeur-card {
+  font-family: 'Roboto', sans-serif;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.majeur-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Mise en valeur des modules 12, 15, 16 */
+.majeur-highlight {
+  background: linear-gradient(135deg, #377FBC, #4fa3ff);
+  color: white;
+}
+
 @media screen and (max-width: 1440px) {
   body .container {
     padding-top: 0;
-    margin-top: calc(var(--hh-header) + 40px); 
   }
 
   .content-flex {
@@ -71,27 +138,29 @@ h1 {
 
   .titrePage {
     flex: 0 0 36%;
-    margin-right: 0; /* Suppression de toute marge droite qui pourrait perturber le calcul */
+    margin-right: 0;
+    /* Suppression de toute marge droite qui pourrait perturber le calcul */
     margin-top: 2em;
   }
 
   .presentationDepartementInfo {
     flex: 0 0 64%;
-    margin: 4em 0 10em 0; /* J'ai conservé 4em en haut pour l'espacement si besoin */
+    margin: 4em 0 10em 0;
+    /* J'ai conservé 4em en haut pour l'espacement si besoin */
   }
 
-  .presentationDepartementInfo h2{
+  .presentationDepartementInfo h2 {
     color: #377FBC;
     font-size: 55px;
     font-weight: Bold;
   }
 
-  .presentationDepartementInfo p{
+  .presentationDepartementInfo p {
     font-size: 25px;
     font-weight: ExtraBold;
     padding-right: 17%;
   }
-  
+
   /* Réduction du titre principal */
   h1 {
     font-size: 60px;
@@ -102,18 +171,17 @@ h1 {
   .presentationDepartementInfo h2 {
     font-size: 40px;
   }
+
   .presentationDepartementInfo p {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  /* Réduction des marges latérales du conteneur */
   body .container {
-    margin: 120px 2em 0 2em;
     padding-top: 0;
   }
-  
+
   /* Réduction du titre principal */
   h1 {
     padding-top: 87px;
@@ -129,6 +197,7 @@ h1 {
   .presentationDepartementInfo h2 {
     font-size: 32px;
   }
+
   .presentationDepartementInfo p {
     font-size: 18px;
   }
@@ -141,7 +210,7 @@ h1 {
     margin-right: 2em;
     margin-top: calc(var(--hh-header) + 30px);
   }
-  
+
   .content-flex {
     /* flex-direction: column;
     align-items: flex-start;
@@ -158,11 +227,11 @@ h1 {
   .presentationDepartementInfo {
     padding: 0 0 0 40px;
   }
-  
+
   .presentationDepartementInfo h2 {
     font-size: 28px;
   }
-  
+
   .presentationDepartementInfo p {
     font-size: 16px;
   }
@@ -180,7 +249,7 @@ h1 {
     margin-left: 0;
     padding-left: 0;
   }
-  
+
   .titrePage h1 {
     font-size: 30px;
     width: 88%;
@@ -189,11 +258,11 @@ h1 {
   .presentationDepartementInfo {
     padding-left: 0;
   }
-  
+
   .presentationDepartementInfo h2 {
     font-size: 24px;
   }
-  
+
   .presentationDepartementInfo p {
     font-size: 14px;
   }
