@@ -1,0 +1,88 @@
+.prof-carousel-section {
+    padding: 80px 60px;
+    background: #f7f7f7;
+}
+
+.prof-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #33477B;
+}
+
+.prof-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.prof-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 10px;
+}
+
+.prof-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.prof-card {
+    min-width: 260px;
+    background: white;
+    border-radius: 18px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.prof-card:hover {
+    transform: translateY(-8px);
+}
+
+.prof-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #33477B;
+}
+
+.prof-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.prof-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.carousel-btn {
+    background: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 10;
+}
+
+.carousel-btn i {
+    font-size: 16px;
+    color: #33477B;
+}
+
+.carousel-btn.left {
+    left: -20px;
+}
+
+.carousel-btn.right {
+    right: -20px;
+}
