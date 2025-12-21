@@ -1,3 +1,13 @@
+let coursData = [];
+
+fetch('../json/liste-cours.json')
+  .then(res => res.json())
+  .then(data => {
+    coursData = data.cours;
+  })
+  .catch(err => console.error("Erreur chargement coursData :", err));
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll(".cours-container").forEach(container => {
@@ -77,3 +87,53 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/**********************************************************************************************/
+
+const overlay = document.getElementById("popupZone");
+const closeBtn = document.getElementById("fermerPopup");
+
+const modalTitre = document.getElementById("moduleTitre");
+const modalModule = document.getElementById("module");
+const modalProfNom = document.getElementById("moduleProfNom");
+const modalProfImg = document.getElementById("moduleProfImg");
+const modalDescription = document.getElementById("modal-description");
+
+
+document.addEventListener("click", e => {
+
+    const btn = e.target.closest(".en-savoir-plus");
+    if (!btn) return;
+
+    e.stopPropagation();
+
+    const id = parseInt(btn.dataset.id);
+    if (!id) return;
+
+    const cours = coursData.find(c => c.id === id);
+    if (!cours) return;
+
+    modalTitre.textContent = cours.titre;
+    modalModule.textContent = cours.module;
+    modalProfNom.textContent = cours.intervenant;
+    modalProfImg.src = cours.image_prof;
+    modalProfImg.alt = cours.intervenant;
+    modalDescription.textContent = cours.description_longue;
+
+    overlay.classList.remove("hidden");
+    document.body.classList.add("modal-open");
+});
+
+closeBtn.addEventListener("click", () => {
+    overlay.classList.add("hidden");
+    document.body.classList.remove("modal-open");
+});
+
+overlay.addEventListener("click", e => {
+    if (e.target === overlay) {
+        overlay.classList.add("hidden");
+        document.body.classList.remove("modal-open");
+    }
+});
+
+

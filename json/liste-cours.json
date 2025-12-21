@@ -1,48 +1,59 @@
 {
   "cours": [
-    {
+        {
+      "id": 1,
       "titre": "Bases de données 1 : Concepts de base",
       "module": "TI503N-2526PSA01",
       "intervenant": "Lena TREBAUL",
-      "description":"Être capable de créer une base de données de A à Z : analyser les besoins, concevoir un modèle conceptuel cohérent, puis le traduire en modèles logique et physique. Savoir appliquer les bonnes pratiques de conception d’un système d’information, notamment les règles de normalisation. Être en mesure d’exploiter une base de données pour répondre à des problématiques concrètes à travers la rédaction de requêtes d’interrogation.",
-      "autre":"site.com"
+      "image_prof": "../img/profs/lena_trebaul.jpg",
+      "description_courte": "Concevoir et exploiter une base de données relationnelle.",
+      "description_longue": "Ce cours permet d’apprendre à concevoir une base de données de A à Z : analyse des besoins, modélisation conceptuelle, logique et physique. Il aborde les règles de normalisation et la rédaction de requêtes SQL pour répondre à des problématiques concrètes."
     },
     {
+      "id": 2,
       "titre": "Programmation Web 1 : HTML, CSS, JS",
       "module": "TI504N-2526PSA01",
       "intervenant": "Mohamed HAMIDI",
-      "description":"L’objectif de ce module est de comprendre les technologies et protocoles du Web, d’en découvrir les évolutions, et de maîtriser les standards HTML5, CSS3 et les bases de JavaScript pour créer des pages Web dynamiques. Il introduit également les outils essentiels du développement Web moderne côté client. L’apprentissage repose principalement sur des travaux pratiques favorisant l’autonomie.",
-      "autre":"site.com"
+      "image_prof": "../img/profs/mohamed_hamidi.jpg",
+      "description_courte": "Découvrir les bases du développement web moderne.",
+      "description_longue": "Ce module introduit les technologies fondamentales du Web : HTML5, CSS3 et JavaScript. Il permet de comprendre le fonctionnement du Web, de créer des pages dynamiques et d’utiliser les outils modernes du développement front-end."
     },
     {
+      "id": 3,
       "titre": "Java 1 : Fondamentaux de la POO",
       "module": "TI505N-2526PSA01",
       "intervenant": "Cherifa BEN KHELIL",
-      "description":"Acquérir une compréhension des bases de la programmation en langage Java, en mettant l'accent sur les concepts de la programmation orientée objet (POO).",
-      "autre":"site.com"
+      "image_prof": "../img/profs/cherifa_benkhelil.jpg",
+      "description_courte": "Apprendre la programmation orientée objet en Java.",
+      "description_longue": "Ce cours vise à maîtriser les bases du langage Java et les concepts clés de la programmation orientée objet : classes, objets, héritage, encapsulation et polymorphisme."
     },
     {
+      "id": 4,
       "titre": "Introduction au système Linux",
       "module": "TI507N-2526PSA01",
       "intervenant": "Yvan GUIFO",
-      "description":"Ce cours est une introduction au concept de système d'exploitation, et en particulier aux systèmes d'exploitation basés sur GNU/Linux. Vous découvrirez la philosophie, le fonctionnement, les composants de base et les outils puissants présents sur les systèmes GNU/Linux à travers l'une de ses distributions : Debian.",
-      "autre":"site.com"
-    },    
+      "image_prof": "../img/profs/yvan_guifo.jpg",
+      "description_courte": "Apprendre la programmation et le fonctionnement des systèmes GNU/Linux.",
+      "description_longue": "Ce cours est une introduction au concept de système d'exploitation, et en particulier aux systèmes d'exploitation basés sur GNU/Linux. Vous découvrirez la philosophie, le fonctionnement, les composants de base et les outils puissants présents sur les systèmes GNU/Linux à travers l'une de ses distributions : Debian."
+    },
     {
+      "id": 5,
       "titre": "Les fondamentaux du Cloud Computing",
       "module": "TI609N-2526PSP01",
       "intervenant": "BEN KHELIL Cherifa",
-      "description":"Faire du cloud computing",
-      "autre":"site.com"
+      "image_prof": "../img/profs/cherifa_benkhelil.jpg",
+      "description_courte": "Faire du cloud computing",
+      "description_longue": "Ce cours est une introduction au concept de système d'exploitation, et en particulier aux systèmes d'exploitation basés sur GNU/Linux. Vous découvrirez la philosophie, le fonctionnement, les composants de base et les outils puissants présents sur les systèmes GNU/Linux à travers l'une de ses distributions : Debian."
     },
     {
+      "id": 6,
       "titre": "Introduction à la cybersécurité",
       "module": "TI530-2526PSA01",
       "intervenant": "Yaovi SOGLO",
-      "description":"Faire de la cybersécurité",
-      "autre":"site.com"
+      "image_prof": "../img/profs/yaovi_soglo.jpg",
+      "description_courte": "Faire de la cybersécurité",
+      "description_longue": "Ce cours est une introduction au concept de système d'exploitation, et en particulier aux systèmes d'exploitation basés sur GNU/Linux. Vous découvrirez la philosophie, le fonctionnement, les composants de base et les outils puissants présents sur les systèmes GNU/Linux à travers l'une de ses distributions : Debian."
     }
-
   ]
 }
   

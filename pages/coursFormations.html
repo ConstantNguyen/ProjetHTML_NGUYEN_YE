@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/cours.css">
   <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/chatbox.css">
 
   <!-- fontawesome link -->
   <script src="https://kit.fontawesome.com/4d6659720c.js" crossorigin="anonymous"></script>
@@ -82,6 +83,8 @@
       </div>
     </div>
   </div>
+
+
   <footer class="footer">
         <hr class="traitFooter">
         <div class="footerZoneBouton">
@@ -116,6 +119,44 @@
         </div>
     </footer>
 
+       <button id="chatbox">
+        <i class="fa-solid fa-headset"></i>
+    </button>
+
+    <div id="chat" class="hidden">
+
+        <div id="chat-header">
+            Assistant EFREI
+            <button id="fermerChat">✖</button>
+        </div>
+
+        <div id="chat-box"></div>
+
+        <div id="chatZone">
+            <input type="text" id="userZone" placeholder="Posez votre question..." />
+            <button id="send-btn">Envoyer</button>
+        </div>
+
+    </div>
+
+    <div id="popupZone" class="hidden">
+      <div id="modal">
+        <button id="fermerPopup">✖</button>
+
+        <h2 id="moduleTitre"></h2>
+        <p id="module"></p>
+
+        <div class="moduleProf">
+          <img id="moduleProfImg" src="" alt="Professeur">
+          <span id="moduleProfNom"></span>
+        </div>
+
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+
+  <script src="./../js/chatbox.js"></script>
   <script src="./../js/header.js"></script>
   <script src="./../js/cours.js"></script>
   <script src="./../js/lectureJson.js"></script>

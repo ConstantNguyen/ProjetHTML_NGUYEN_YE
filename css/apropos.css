@@ -81,7 +81,7 @@
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-        align-items: right;
+    align-items: right;
     width: 20%;
 }
 
@@ -93,6 +93,8 @@
     width: 80%;
     border-radius: 8px;
 }
+
+
 
 
 

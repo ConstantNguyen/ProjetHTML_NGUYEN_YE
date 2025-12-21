@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/apropos.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/chatbox.css">
 
 
 
@@ -83,7 +84,7 @@
                             Aide sur le code de manière générale (css, html, js)
                         </p>
                     </div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdCxu8_D2TDGmUGT3v5BiZV2g6LHbSgV_XbA&s" alt="image" class="imgMembre">
+                    <img src="../img/Constant.webp" alt="image" class="imgMembre">
                 </div>
 
                 <div class="equipe">
@@ -96,7 +97,7 @@
                             
                         </p>
                     </div>
-                    <img src="../img/VickLeGrosBGGG.jpg" alt="image" class="imgMembre">
+                    <img src="../img/Vick.jpg" alt="image" class="imgMembre">
                 </div>
             </div>
         </section>
@@ -139,7 +140,27 @@
     </footer>
 
 
+    <button id="chatbox">
+        <i class="fa-solid fa-headset"></i>
+    </button>
 
+    <div id="chat" class="hidden">
+
+        <div id="chat-header">
+            Assistant EFREI
+            <button id="fermerChat">✖</button>
+        </div>
+
+        <div id="chat-box"></div>
+
+        <div id="chatZone">
+            <input type="text" id="userZone" placeholder="Posez votre question..." />
+            <button id="send-btn">Envoyer</button>
+        </div>
+
+    </div>
+
+    <script src="../js/chatbox.js" defer></script>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
 </body>
