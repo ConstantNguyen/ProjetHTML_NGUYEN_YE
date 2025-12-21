@@ -8,7 +8,7 @@ header {
 
     position: fixed;
 
-    background-color: var(--c-main-nav);
+    background-color: var(--c-primaire);
 
     /* espacement entre le container et le bandeau du header */
     padding: 0 var(--wp-lr-header);
