@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./css/cours.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/chatbox.css">
   <!-- fontawesome link -->
   <script src="https://kit.fontawesome.com/4d6659720c.js" crossorigin="anonymous"></script>
 </head>
@@ -113,6 +114,27 @@
         </div>
     </footer>
 
+  <button id="chatbox"> 
+    <i class="fa-solid fa-headset"></i>
+  </button>
+
+  <div id="chat" class="hidden">
+
+    <div id="chatEntete">
+      Assistant EFREI
+      <button id="fermerChat">✖</button>
+    </div>
+
+    <div id="chat-box"></div>
+
+    <div id="chatZone">
+      <input type="text" id="userZone" placeholder="Posez votre question..." />
+      <button id="boutonEnvoie">Envoyer</button>
+    </div>
+
+  </div>
+
+  <script src="../js/chatbox.js" defer></script>
   <script src="./js/header.js"></script>
   <script src="./js/cours.js"></script>
   <script src="./js/footer.js"></script>
