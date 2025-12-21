@@ -127,6 +127,79 @@ h1 {
   color: white;
 }
 
+/* Partie avec les liens vers la brochure et le formulaire. */
+.liensMajeurs {
+  /* Conteneur principal pour centrer et ajouter du padding si nécessaire */
+  padding: 4em;
+}
+
+.majeurs-grid {
+  display: grid;
+  /* Définition des colonnes : 2/3 pour le texte, 1/3 pour les boutons */
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.majeurs-grid h2,
+.majeurs-grid p {
+  /* Pour s'assurer que le h2 et le p prennent la même zone de grille */
+  grid-column: 1 / 2;
+  color: white;
+}
+
+.majeurs-grid h2 {
+  font-size: 32px;
+  margin-bottom: 0.5em;
+}
+
+.majeurs-grid p {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/* Conteneur pour les boutons (doit être flex pour les aligner horizontalement) */
+.majeurs-grid .liensMajeurs-boutons {
+  /* Placer le conteneur des boutons dans la deuxième colonne */
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.majeurs-grid button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid #377FBC;
+  font-weight: 500;
+}
+
+#brochure {
+  background-color: #377FBC;
+  color: white;
+}
+
+#brochure:hover {
+  background-color: #4fa3ff;
+  border-color: #4fa3ff;
+}
+
+#candidature {
+  background-color: transparent;
+  color: #377FBC;
+}
+
+#candidature:hover {
+  background-color: #377FBC;
+  color: white;
+}
+
 @media screen and (max-width: 1440px) {
   body .container {
     padding-top: 0;
@@ -200,6 +273,28 @@ h1 {
 
   .presentationDepartementInfo p {
     font-size: 18px;
+  }
+
+  .majeurs-grid {
+    /* Revenir à une disposition sur une seule colonne */
+    grid-template-columns: 1fr;
+    justify-items: center;
+    /* Centrer le contenu horizontalement */
+    text-align: center;
+  }
+
+  .majeurs-grid h2,
+  .majeurs-grid p {
+    grid-column: 1 / 2;
+    /* S'assurer qu'ils prennent toute la largeur */
+    text-align: center;
+  }
+
+  .liensMajeurs-boutons {
+    grid-column: 1 / 2;
+    /* S'assurer qu'ils prennent toute la largeur */
+    justify-content: center !important;
+    /* Centrer les boutons sur mobile */
   }
 }
 

@@ -45,8 +45,7 @@
     },
     {
         "id": 12,
-        "nom": "RÉSEAUX & SÉCURITÉ",
-        "highlight": true
+        "nom": "SYSTÈMES ROBOTIQUES & DRONES"
     },
     {
         "id": 13,
@@ -54,7 +53,8 @@
     },
     {
         "id": 14,
-        "nom": "SYSTÈMES ROBOTIQUES & DRONES"
+        "nom": "RÉSEAUX & SÉCURITÉ",
+        "highlight": true
     },
     {
         "id": 15,
