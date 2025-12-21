@@ -1,0 +1,252 @@
+#contactForm {
+    background-color: transparent;
+    width: 60%;
+}
+
+.contactFormGeneral form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #00274d;
+}
+
+label .required {
+    color: #ff0066;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center; 
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+
+.contactFormGeneral {
+    width: 100%; 
+    background-color: rgba(245,245,245,0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url("https://www.efrei.fr/wp-content/uploads/2025/08/dome.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center; 
+}
+
+.contactFormGeneral h2 {
+    text-align: center;
+    color: #00274d;
+    font-size: 28px;
+}
+
+.formZone {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #00274d;
+    box-shadow: 0 0 8px rgba(0,39,77,0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.checkbox legend {
+    font-weight: bold;
+    color: #00274d;
+}
+
+.checkbox label {
+    font-weight: normal;
+}
+
+
+.boutonEnvoi {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.boutonEnvoi button {
+    background-color: #00274d;
+    color: #fff;
+    border: none;
+    padding: 14px 40px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boutonEnvoi button:hover {
+    background-color: #0055a5;
+}
+
+
+#formPopup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+#formPopup .popUp {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    animation: popupFade 0.3s ease;
+}
+
+#formPopup .popUp h3 {
+    color: #00274d;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#formPopup .popUp p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#formPopup .popUp button {
+    background-color: #00274d;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#formPopup .popUp button:hover {
+    background-color: #0055a5;
+}
+
+@keyframes popupFade {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .contact-form-container {
+        flex-direction: column;
+    }
+    .contact-form-right {
+        height: 200px;
+    }
+}
+
+/* ========================================= */
+
+.contactInfo {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.map {
+    margin: 2%;
+    flex: 2 1 600px;
+    height: 300px;
+    width: 3000px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contactDetail {
+    flex: 1 1 300px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactDetail h3 {
+    color: #00274d;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.importants {
+    font-size: 16px;
+    color: #00274d;
+}
+
+.contactDetail a {
+    color: #0055a5;
+    text-decoration: none;
+}
+
+.grises {
+    color: rgb(65, 63, 63);
+}
+
+.contactDetail a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+    .contactInfo {
+        flex-direction: column;
+    }
+    .map, .contactDetail {
+        flex: 1 1 100%;
+    }
+}
+
+
+

@@ -8,46 +8,38 @@
   <title>Projet HTML</title>
   <link rel="icon" href="../img/logoOnglet.png">
 
-  <!-- css -->
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/cours.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/chatbox.css">
 
-  <!-- fontawesome link -->
   <script src="https://kit.fontawesome.com/4d6659720c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="menu-header">
-      <!-- header logo -->
       <div class="header-brand">
         <span class="light">
-          <!--<i class="fa-solid fa-graduation-cap ic-wm-el-header"></i>EFREI</span><span class="bold"> PARIS</span>-->
           <img src="../img/Efrei-logo-2025.svg" class="logoEfrei" />
       </div>
 
-      <!-- header responsive -->
       <div id="HeaderResponsive"></div>
-
-      <!-- header taille initiale -->
       <div class="header-navigation" id="HeaderInitial">
         <div class="navigation-onglets">
           <nav>
             <ul>
-              <a href = "apropos.html"><li class="hover-underline-active">A propos</li></a>
-              <a href = "../index.html"><li class="hover-underline-active">Accueil</li></a>
-              <a href = "coursFormations.html"><li class="hover-underline-active">Cours et formations</li></a>
-              <a href = "equipeEnseignante.html"><li class="hover-underline-active">Equipe prédagogique</li></a>
-              <a href = "contact.html"><li class="hover-underline-active">Contact</li></a>
+              <a href = "apropos.html"><li class="hover-underline-active"> <li class="hover-underline-active"> <i class="fa-solid fa-circle-info"></i> A propos</li></a>
+              <a href = "../index.html"><li class="hover-underline-active"> <i class="fa-solid fa-house"></i> Accueil</li></a>
+              <a href = "coursFormations.html"><li class="hover-underline-active"> <i class="fa-solid fa-graduation-cap"></i> Cours et formations</li></a>
+              <a href = "equipeEnseignante.html"><li class="hover-underline-active"><i class="fa-solid fa-people-group"></i> Equipe prédagogique</li></a>
+              <a href = "contact.html"><li class="hover-underline-active"> <i class="fa-solid fa-phone"></i> Contact</li></a>
             </ul>
           </nav>
         </div>
       </div>
 
-      <!-- hambuger header responsive -->
       <div id="Biggachou"><span></span><span></span><span></span><span></span></div>
     </div>
   </header>
@@ -62,6 +54,10 @@
         <div class="btn-filtrer" id="AjouterFiltres">
           <span>Ajouter des filtres</span>
         </div>
+        <div>
+          <button class="btn-filtrer" id="btnRechercher">Rechercher</button>
+        </div>
+        
       </div>
 
       <div class="liste-filtres">
@@ -77,7 +73,6 @@
 
         </div>
       </div>
-      <!-- liste des cours -->
       <div class="liste-cours" id="liste-cours">
         
       </div>
@@ -119,41 +114,43 @@
         </div>
     </footer>
 
-       <button id="chatbox">
+    <button id="chatbox">
         <i class="fa-solid fa-headset"></i>
     </button>
 
     <div id="chat" class="hidden">
-
-        <div id="chat-header">
+        <div id="chatEntete">
             Assistant EFREI
             <button id="fermerChat">✖</button>
         </div>
-
         <div id="chat-box"></div>
-
         <div id="chatZone">
             <input type="text" id="userZone" placeholder="Posez votre question..." />
-            <button id="send-btn">Envoyer</button>
+            <button id="boutonEnvoie">Envoyer</button>
         </div>
-
     </div>
 
     <div id="popupZone" class="hidden">
       <div id="modal">
         <button id="fermerPopup">✖</button>
+        
+        <h2 id="moduleTitre" class="moduleTitreClass"></h2>
 
-        <h2 id="moduleTitre"></h2>
-        <p id="module"></p>
-
-        <div class="moduleProf">
-          <img id="moduleProfImg" src="" alt="Professeur">
-          <span id="moduleProfNom"></span>
+        <div class="moduleZone">
+          <div class="moduleProf">
+            <div class="moduleProfImg" id="moduleProfImg"></div>
+            <div class="moduleProfInfo">
+              <span id="moduleProfNom" class="profNom"></span>
+              <span id="module" class="profModule"></span>
+            </div>
+          </div>
+          <div class="modulDescription">
+            <p id="modulDescription"></p>
+          </div>
         </div>
-
-        <p id="modal-description"></p>
       </div>
     </div>
+
 
 
   <script src="./../js/chatbox.js"></script>

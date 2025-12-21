@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/chatbox.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
 
     <!-- fontawesome link -->
     <script src="https://kit.fontawesome.com/4d6659720c.js" crossorigin="anonymous"></script>
@@ -35,11 +37,25 @@
                 <div class="navigation-onglets">
                     <nav>
                         <ul>
-                            <a href = "apropos.html"><li class="hover-underline-active">A propos</li></a>
-                            <a href = "../index.html"><li class="hover-underline-active">Accueil</li></a>
-                            <a href = "coursFormations.html"><li class="hover-underline-active">Cours et formations</li></a>
-                            <a href = "equipeEnseignante.html"><li class="hover-underline-active">Equipe prédagogique</li></a>
-                            <a href = "contact.html"><li class="hover-underline-active">Contact</li></a>
+                            <a href="apropos.html">
+                                <li class="hover-underline-active">
+                                <li class="hover-underline-active"> <i class="fa-solid fa-circle-info"></i> A propos
+                                </li>
+                            </a>
+                            <a href="../index.html">
+                                <li class="hover-underline-active"> <i class="fa-solid fa-house"></i> Accueil</li>
+                            </a>
+                            <a href="coursFormations.html">
+                                <li class="hover-underline-active"> <i class="fa-solid fa-graduation-cap"></i> Cours et
+                                    formations</li>
+                            </a>
+                            <a href="equipeEnseignante.html">
+                                <li class="hover-underline-active"><i class="fa-solid fa-people-group"></i> Equipe
+                                    prédagogique</li>
+                            </a>
+                            <a href="contact.html">
+                                <li class="hover-underline-active"> <i class="fa-solid fa-phone"></i> Contact</li>
+                            </a>
                         </ul>
                     </nav>
                 </div>
@@ -51,7 +67,83 @@
     </header>
 
     <div class="container">
-        contact
+        <div class="contactFormGeneral">
+            <h2>Contactez-nous</h2>
+            <form id="contactForm">
+                <div class="formZone">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="exemple@efrei.fr">
+                </div>
+                <div class="formZone">
+                    <label for="prenom">Prénom <span class="required">*</span></label>
+                    <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+                </div>
+                <div class="formZone">
+                    <label for="nom">Nom <span class="required">*</span></label>
+                    <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                </div>
+
+
+                <div class="formZone">
+                    <label for="role">Je suis<span class="required">*</span></label>
+                    <select id="role" name="role">
+                        <option value="etudiant">Un étudiant</option>
+                        <option value="parent">Un parent d'élève</option>
+                        <option value="enseignant">Un enseignant</option>
+                        <option value="prospect">Un prospect</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="formZone">
+                    <label for="sujet">Sujet<span class="required">*</span></label>
+                    <input type="text" id="sujet" name="sujet" placeholder="Sujet de votre demande">
+                </div>
+
+                <div class="formZone">
+                    <label for="description">Description<span class="required">*</span></label>
+                    <textarea id="description" name="description" placeholder="Votre message" rows="8"></textarea>
+                </div>
+
+                <fieldset class="formZone checkbox">
+                    <legend>Autres informations</legend>
+                    <label><input type="checkbox" name="infos" value="brochure"> Brochure</label>
+                    <label><input type="checkbox" name="infos" value="candidature"> Formulaire de candidature</label>
+                    <label><input type="checkbox" name="infos" value="agenda"> Calendrier des forums</label>
+                </fieldset>
+
+                <div class="boutonEnvoi">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="contactInfo">
+        <div class="map">
+            <iframe
+                width="100%"
+                height="100%"
+                style="border:0; border-radius:12px;"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.64214804138!2d2.3611763768485705!3d48.788721705606285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673e24e04a9c3%3A0xc55cb3e676f95321!2sEfrei!5e0!3m2!1sfr!2sfr!4v1766278597776!5m2!1sfr!2sfr">
+            </iframe>
+        </div>
+        <div class="contactDetail">
+            <h3>Contacts importants</h3>
+
+            <p class="importants"><strong>Accueil :</strong> +33 188 289 000</p>
+
+            <p class="importants"><strong>Campus Paris :</strong></p>
+            <p class="grises">+33 188 289 001</p>
+            <p class="grises">admissions@efrei.fr</p>
+            <p class="grises">30-32 Av. de la République, 94800 Villejuif</p>
+
+            <p class="importants"><strong>Campus Bordeaux :</strong> 
+            <p class="grises">+33 582 060 162</p>
+            <p class="grises">admissions@efrei.fr</p>
+            <p class="grises">83 Rue Lucien Faure, 33000 Bordeaux</p>
+        </div>
     </div>
 
     <footer class="footer">
@@ -66,10 +158,14 @@
         <div class="footerCentrer">
             <div class="footerTexteBlabla">
                 <p>© 2025 EFREI-Tous droits réservés</p>
-                <a href="https://www.efrei.fr/mentions-legales/" target="_blank"><p class="hover-underline-active">Mentions légales</p></a>
-                <a href="https://www.efrei.fr/donnees-personnelles/" target="_blank"><p class="hover-underline-active">Données personnelles</p></a>
+                <a href="https://www.efrei.fr/mentions-legales/" target="_blank">
+                    <p class="hover-underline-active">Mentions légales</p>
+                </a>
+                <a href="https://www.efrei.fr/donnees-personnelles/" target="_blank">
+                    <p class="hover-underline-active">Données personnelles</p>
+                </a>
                 <p>Cookies</p>
-                
+
                 <p class="langue">
                     <span id="fr" class="langueChoix texteGras">FR</span> |
                     <span id="en" class="langueChoix">EN</span> |
@@ -77,18 +173,21 @@
                 </p>
             </div>
             <div class="footerLogoReseaux">
-                <a href="https://www.facebook.com/EfreiParis/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/EfreiParis/" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://x.com/Efrei_Paris" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://www.youtube.com/efrei/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.instagram.com/efrei_paris/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/school/efrei/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/efrei_paris/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/school/efrei/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://www.tiktok.com/@be.efrei" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                 <a href="https://www.twitch.tv/efrei_?lang=fr" target="_blank"><i class="fa-brands fa-twitch"></i></a>
             </div>
         </div>
     </footer>
 
-       <button id="chatbox">
+    <button id="chatbox">
         <i class="fa-solid fa-headset"></i>
     </button>
 
@@ -109,9 +208,18 @@
     </div>
 
 
+    <div id="formPopup">
+        <div class="popUp">
+            <h3>Merci !</h3>
+            <p>Votre message a été envoyé.<br>Nous vous recontacterons bientôt !</p>
+            <button id="fermerPopUp">Fermer</button>
+        </div>
+    </div>
+
+    <script src="../js/contact.js"></script>
     <script src="../js/chatbox.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
 </body>
 
-</html>  
+</html>

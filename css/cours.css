@@ -401,29 +401,112 @@
 
 /* Bouton d'ouverture du chat */
 
-/* Overlay sombre */
-#modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
+#popupZone {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  color: black;
+  align-items: center;
+  z-index: 2000;
+
 }
 
-/* Popup */
 #modal {
-    background: white;
-    width: 60%;
-    max-width: 600px;
-    padding: 30px;
-    border-radius: 12px;
-    position: relative;
-    animation: popup 0.3s ease;
+  background: white;
+  color: black;
+  width: 70%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 12px;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* Bouton fermeture */
+#fermerPopup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  background: none;
+  border: none;
+}
+
+.moduleTitreClass {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.moduleZone {
+  display: flex;
+  gap: 20px;
+}
+
+.moduleProf {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.moduleProfImg {
+  width: 100%;
+  aspect-ratio: 3/4; 
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+.moduleProfInfo {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 0;
+  border-radius: 0 0 8px 8px;
+}
+
+
+#moduleTitre,
+#modulDescription {
+    color: #00274d;
+}
+
+
+.profNom {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.profModule {
+  display: block;
+  font-size: 14px;
+}
+
+.modulDescription {
+  width: 60%;
+  font-size: 14px;
+  text-align: justify;
+  overflow-y: auto;
+  max-height: 300px;
+  padding-right: 10px;
+}
+
+
 #close-modal {
     position: absolute;
     top: 15px;
@@ -432,12 +515,12 @@
     font-size: 20px;
 }
 
-/* Caché */
+
 .hidden {
     display: none;
 }
 
-/* Animation */
+
 @keyframes popup {
     from {
         transform: scale(0.8);
@@ -449,7 +532,7 @@
     }
 }
 
-body.modal-open {
+body.moduleOuvert {
     overflow: hidden;
 }
 
