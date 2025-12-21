@@ -185,14 +185,21 @@ h1 {
   gap: 15px;
 }
 
-.majeurs-grid button {
+/* Style général pour les liens d'action (maintenant des <a>) */
+
+.btn-action {
+  display: block;
+  /* Important pour que padding et width fonctionnent */
+  text-align: center;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   border: 2px solid #377FBC;
   font-weight: 500;
+  text-decoration: none;
+  /* Enlever le soulignement par défaut des <a> */
 }
 
 #brochure {
