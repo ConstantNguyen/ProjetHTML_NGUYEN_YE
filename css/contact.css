@@ -239,14 +239,21 @@ textarea {
 .contactDetail a:hover {
     text-decoration: underline;
 }
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 600px) {
     .contactInfo {
         flex-direction: column;
     }
     .map, .contactDetail {
         flex: 1 1 100%;
     }
+
+    .contactFormGeneral {
+        margin-right: 120px;
+    }
 }
+
+
 
 
 

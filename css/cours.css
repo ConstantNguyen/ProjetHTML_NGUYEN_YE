@@ -536,3 +536,25 @@ body.moduleOuvert {
     overflow: hidden;
 }
 
+
+@media screen and (max-width: 900px) {
+    :root {
+        --w-carte: 190px;
+        --h-carte: 280px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        --w-carte: 100%;
+        --h-carte: auto;
+    }
+
+    .liste-cours .carte {
+        margin: 10px 0;
+    }
+
+    .rechercher-cours input {
+        width: 100%;
+    }
+}

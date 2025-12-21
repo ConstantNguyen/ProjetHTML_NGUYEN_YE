@@ -136,9 +136,8 @@
     }
 
     .footerCentrer {
-        /* Permet aux blocs de passer à la ligne */
         flex-wrap: wrap; 
-        justify-content: flex-start; /* Aligner à gauche */
+        justify-content: flex-start;
         gap: 30px;
     }
     
@@ -155,7 +154,6 @@
     }
 }
 
-/* --- RÈGLES POUR MOBILE (<= 425px) --- */
 @media screen and (max-width: 425px) {
     .footer {
         padding: 20px;
@@ -166,7 +164,7 @@
     }
     
     .footerLogoReseaux a {
-        font-size: 20px; /* Agrandir les icônes pour le touch */
+        font-size: 20px; 
     }
 }
 

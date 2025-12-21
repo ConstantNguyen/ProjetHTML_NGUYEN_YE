@@ -99,6 +99,53 @@
 }
 
 
+@media screen and (max-width: 1024px) {
+    .apropos-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .aproposImage img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .membres h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .equipe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .titrePage {
+        font-size: 32px;
+    }
+
+    .aproposParagraphe {
+        font-size: 15px;
+        margin-right: 40%;
+    }
+
+    .aproposImage {
+        margin-right: 30%;
+    }
+
+    .equipe {
+        flex-direction: column;
+        text-align: center;
+        margin-right: 30%;
+    }
+
+    .imgMembre {
+        width: 80px;
+    }
+}
+
+
 
 
 

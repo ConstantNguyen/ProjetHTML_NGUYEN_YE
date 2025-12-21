@@ -347,12 +347,16 @@ h1 {
   }
 }
 
-/* --- RÈGLES POUR MOBILE (<= 425px) --- */
+/* --- RÈGLES POUR MOBILE  --- */
 @media screen and (max-width: 425px) {
   .container {
     margin-left: 1em;
     margin-right: 1em;
     margin-top: calc(var(--hh-header) + 20px);
+  }
+
+  .content-flex {
+    margin: 100px;
   }
 
   .titrePage {
@@ -376,4 +380,5 @@ h1 {
   .presentationDepartementInfo p {
     font-size: 14px;
   }
+
 }
