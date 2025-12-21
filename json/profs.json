@@ -1,0 +1,51 @@
+{
+  "profs": [
+    {
+      "nom": "Mohamed HAMIDI",
+      "specialite": "Programmation Web",
+      "image": "../img/prof/mohamed_hamidi.jpg"
+    },
+    {
+      "nom": "Cherifa BEN KHELIL",
+      "specialite": "Java & Cloud Computing",
+      "image": "../img/prof/cherifa_benkheli.jpg"
+    },
+    {
+      "nom": "Yaovi SOGLO",
+      "specialite": "Cybersécurité",
+      "image": "../img/prof/yaovi_soglo.jpg"
+    },
+    {
+      "nom": "Lena TREBAUL",
+      "specialite": "Bases de données",
+      "image": "../img/prof/pasdephoto.png"
+    },
+    {
+      "nom": "Yvan GUIFO",
+      "specialite": "Systèmes Linux",
+      "image": "../img/prof/yvan-guifo.jpg"
+    },
+    {
+      "nom": "Asma Gabis",
+      "specialite": "Enseignante-chercheuse en informatique et responsable du département informatique",
+      "image": "../img/prof/gabis-asma.jpg"
+    },
+    {
+      "nom": "Mourad Kmimech",
+      "specialite": "Enseignant-chercheur en informatique",
+      "image": "../img/prof/mourad-kmimech.jpg"
+    },
+    {
+      "nom": "Federico Zalamea",
+      "specialite": "Enseignant-chercheur de l’axe de recherche « Sécurité, Résilience et Confiance Numérique »",
+      "image": "../img/prof/federico-zalamea.jpg"
+    },
+    {
+      "nom": "Helene KASSEL",
+      "specialite": "Department of Mathematics & Computer Science - Efrei",
+      "image": "../img/prof/helene-kassel.jpg"
+    }
+  ]
+}
+
+

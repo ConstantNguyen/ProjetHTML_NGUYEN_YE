@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const btnRechercher = document.getElementById("btnRechercher");
 
 btnRechercher.addEventListener("click", () => {
-    alert("Fonctionnalité pas implémenté, car on ne peut pas utiliser Ajax et Jquery, ce qui nous ferait perdre du temps");
+    alert("Fonctionnalité pas implémentée, car on ne peut pas utiliser Ajax et Jquery, ce qui nous ferait perdre du temps");
 
 });
 

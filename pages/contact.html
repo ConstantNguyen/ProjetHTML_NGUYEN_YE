@@ -92,7 +92,7 @@
 
         <div class="formZone">
           <label for="role">Je suis<span class="required">*</span></label>
-          <select id="role" name="role">
+          <select id="role" name="role" required>
             <option value="etudiant">Un étudiant</option>
             <option value="parent">Un parent d'élève</option>
             <option value="enseignant">Un enseignant</option>
@@ -103,12 +103,12 @@
 
         <div class="formZone">
           <label for="sujet">Sujet<span class="required">*</span></label>
-          <input type="text" id="sujet" name="sujet" placeholder="Sujet de votre demande">
+          <input type="text" id="sujet" name="sujet" placeholder="Sujet de votre demande" required>
         </div>
 
         <div class="formZone">
           <label for="description">Description<span class="required">*</span></label>
-          <textarea id="description" name="description" placeholder="Votre message" rows="8"></textarea>
+          <textarea id="description" name="description" placeholder="Votre message" rows="8" required></textarea>
         </div>
 
         <fieldset class="formZone checkbox">

@@ -7,8 +7,8 @@
       "image": "database.png",
       "intervenant": "Lena TREBAUL",
       "image_prof": "../img/prof/pasdephoto.png",
-      "description_courte": "Concevoir et exploiter une base de données relationnelle.",
-      "description_longue": "Ce cours permet d’apprendre à concevoir une base de données de A à Z : analyse des besoins, modélisation conceptuelle, logique et physique. Il aborde les règles de normalisation et la rédaction de requêtes SQL pour répondre à des problématiques concrètes."
+      "description_courte": "Apprendre à concevoir, structurer et exploiter efficacement une base de données relationnelle répondant à des besoins concrets.",
+      "description_longue": "Ce cours introduit les fondements des bases de données relationnelles. Les étudiants apprennent à analyser un besoin métier, à concevoir une base de données adaptée et à la structurer de manière cohérente. Le module couvre la modélisation conceptuelle (MERISE ou UML), la modélisation logique et physique, ainsi que les règles de normalisation permettant d’éviter les redondances et incohérences. Une attention particulière est portée à l’écriture de requêtes SQL afin d’interroger, manipuler et exploiter les données dans des cas pratiques proches du monde professionnel."
     },
     {
       "id": 2,
@@ -16,9 +16,9 @@
       "module": "TI504N-2526PSA01",
       "image": "web.png",
       "intervenant": "Mohamed HAMIDI",
-      "image_prof": "../img/prof/pasdephoto.png",
-      "description_courte": "Découvrir les bases du développement web moderne.",
-      "description_longue": "Ce module introduit les technologies fondamentales du Web : HTML5, CSS3 et JavaScript. Il permet de comprendre le fonctionnement du Web, de créer des pages dynamiques et d’utiliser les outils modernes du développement front-end."
+      "image_prof": "../img/prof/mohamed_hamidi.jpg",
+      "description_courte": "Découvrir et maîtriser les bases du développement web pour créer des sites modernes, interactifs et responsives.",
+      "description_longue": "Ce module constitue une introduction complète au développement web. Les étudiants découvrent le fonctionnement du Web et apprennent à créer des pages structurées avec HTML5, mises en forme avec CSS3 et rendues interactives grâce à JavaScript. Le cours aborde également les notions de responsive design, d’accessibilité et de bonnes pratiques de développement front-end. À travers des exercices pratiques et des mini-projets, les étudiants acquièrent les bases nécessaires pour concevoir des interfaces web dynamiques et professionnelles."
     },
     {
       "id": 3,
@@ -27,8 +27,8 @@
       "image": "java.png",
       "intervenant": "Cherifa BEN KHELIL",
       "image_prof": "../img/prof/cherifa_benkheli.jpg",
-      "description_courte": "Apprendre la programmation orientée objet en Java.",
-      "description_longue": "Ce cours vise à maîtriser les bases du langage Java et les concepts clés de la programmation orientée objet : classes, objets, héritage, encapsulation et polymorphisme."
+      "description_courte": "Comprendre et appliquer les principes fondamentaux de la programmation orientée objet avec Java.",
+      "description_longue": "Ce cours permet aux étudiants de découvrir le langage Java et les concepts essentiels de la programmation orientée objet. Ils apprennent à créer et manipuler des classes et des objets, à utiliser l’héritage, l’encapsulation et le polymorphisme, ainsi qu’à structurer correctement un programme. Le module met l’accent sur la rigueur du code, la lisibilité et les bonnes pratiques. Des travaux pratiques permettent de développer des applications simples tout en consolidant la logique de programmation."
     },
     {
       "id": 4,
@@ -36,9 +36,9 @@
       "module": "TI507N-2526PSA01",
       "image": "linux.png",
       "intervenant": "Yvan GUIFO",
-      "image_prof": "../img/prof/pasdephoto.png",
-      "description_courte": "Apprendre la programmation et le fonctionnement des systèmes GNU/Linux.",
-      "description_longue": "Ce cours est une introduction au concept de système d'exploitation, et en particulier aux systèmes d'exploitation basés sur GNU/Linux. Vous découvrirez la philosophie, le fonctionnement, les composants de base et les outils puissants présents sur les systèmes GNU/Linux à travers l'une de ses distributions : Debian."
+      "image_prof": "../img/prof/yvan-guifo.jpg",
+      "description_courte": "Découvrir le fonctionnement des systèmes GNU/Linux et apprendre à les utiliser efficacement.",
+      "description_longue": "Ce cours propose une introduction complète aux systèmes d’exploitation GNU/Linux. Les étudiants découvrent les principes fondamentaux des systèmes d’exploitation, la philosophie open source et l’organisation d’un système Linux. Le module aborde l’utilisation du terminal, la gestion des fichiers, des utilisateurs et des permissions, ainsi que les processus et les services. Des mises en pratique sur une distribution Linux permettent de développer une autonomie technique essentielle pour les métiers de l’informatique."
     },
     {
       "id": 5,
@@ -47,8 +47,8 @@
       "image": "cloud.png",
       "intervenant": "BEN KHELIL Cherifa",
       "image_prof": "../img/prof/cherifa_benkheli.jpg",
-      "description_courte": "Faire du cloud computing",
-      "description_longue": "Ce cours est une introduction au concept de système d'exploitation, et en particulier aux systèmes d'exploitation basés sur GNU/Linux. Vous découvrirez la philosophie, le fonctionnement, les composants de base et les outils puissants présents sur les systèmes GNU/Linux à travers l'une de ses distributions : Debian."
+      "description_courte": "Comprendre les principes du cloud computing et ses usages dans les systèmes informatiques modernes.",
+      "description_longue": "Ce cours introduit les concepts clés du cloud computing, aujourd’hui au cœur des infrastructures informatiques. Les étudiants découvrent les différents modèles de services (IaaS, PaaS, SaaS), les architectures cloud et les enjeux liés à la virtualisation. Le module aborde également les avantages, les limites et les problématiques de sécurité du cloud. À travers des exemples concrets, les étudiants comprennent comment les entreprises exploitent le cloud pour gagner en flexibilité, en performance et en scalabilité."
     },
     {
       "id": 6,
@@ -57,8 +57,8 @@
       "image": "cyber.png",
       "intervenant": "Yaovi SOGLO",
       "image_prof": "../img/prof/yaovi_soglo.jpg",
-      "description_courte": "Faire de la cybersécurité",
-      "description_longue": "Ce cours est une introduction au concept de système d'exploitation, et en particulier aux systèmes d'exploitation basés sur GNU/Linux. Vous découvrirez la philosophie, le fonctionnement, les composants de base et les outils puissants présents sur les systèmes GNU/Linux à travers l'une de ses distributions : Debian."
+      "description_courte": "Découvrir les bases de la cybersécurité et comprendre les menaces qui pèsent sur les systèmes informatiques.",
+      "description_longue": "Ce cours offre une introduction aux enjeux majeurs de la cybersécurité. Les étudiants découvrent les principales menaces informatiques, telles que les attaques réseau, les malwares ou le phishing. Le module aborde également les notions de sécurité des systèmes, de protection des données et de gestion des accès. À travers des exemples concrets et des études de cas, les étudiants prennent conscience de l’importance de la sécurité dans les environnements numériques actuels."
     },
     {
       "id": 8,

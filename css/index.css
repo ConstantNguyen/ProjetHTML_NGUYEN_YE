@@ -82,12 +82,20 @@ h1 {
 }
 
 /* Section des majeurs */
-#majeurs {
+#majeures {
   margin: 0;
   padding: 4em 0;
   background-color: #0d1a33;
   position: relative;
   z-index: 0;
+}
+
+#majeures h3 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 1.5em;
+  margin-left: 5%;
 }
 
 .titre-majeurs {
@@ -99,6 +107,13 @@ h1 {
 }
 
 #majeurs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 4em;
+}
+
+#majeurs-alternance-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
