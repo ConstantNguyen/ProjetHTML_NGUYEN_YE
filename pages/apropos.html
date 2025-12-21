@@ -39,11 +39,11 @@
                 <div class="navigation-onglets">
                     <nav>
                         <ul>
-                            <a href = "apropos.html"><li class="hover-underline-active">A propos</li></a>
-                            <a href = "../index.html"><li class="hover-underline-active">Accueil</li></a>
-                            <a href = "coursFormations.html"><li class="hover-underline-active">Cours et formations</li></a>
-                            <a href = "equipeEnseignante.html"><li class="hover-underline-active">Equipe prédagogique</li></a>
-                            <a href = "contact.html"><li class="hover-underline-active">Contact</li></a>
+                            <a href = "apropos.html"><li class="hover-underline-active"> <li class="hover-underline-active"> <i class="fa-solid fa-circle-info"></i> A propos</li></a>
+                            <a href = "../index.html"><li class="hover-underline-active"> <i class="fa-solid fa-house"></i> Accueil</li></a>
+                            <a href = "coursFormations.html"><li class="hover-underline-active"> <i class="fa-solid fa-graduation-cap"></i> Cours et formations</li></a>
+                            <a href = "equipeEnseignante.html"><li class="hover-underline-active"><i class="fa-solid fa-people-group"></i> Equipe prédagogique</li></a>
+                            <a href = "contact.html"><li class="hover-underline-active"> <i class="fa-solid fa-phone"></i> Contact</li></a>
                         </ul>
                     </nav>
                 </div>
@@ -59,9 +59,12 @@
             <div class="apropos-content">
                 <div class="aproposParagraphe">
                     <h1 class="titrePage">À propos</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione porro magni, aut commodi accusamus tempore, eveniet, odit veritatis consectetur eum! Minus porro mollitia debitis est nostrum maxime facilis velit quod aspernatur corporis, neque ratione dolorem, dolore eius voluptatibus tempore, tenetur consequatur non? Quo officia voluptate veritatis odit esse maiores!
-                    </p>
+                    <p class="textePrincipal">
+                        Ce site web a été réalisé dans le cadre de notre projet en programmation web. Il a pour objectif de présenter les cours et formations proposés, ainsi que les enseignants qui les dispensent, à travers une interface moderne et facile à utiliser.
+                        Le site a été développé en utilisant HTML, CSS et JavaScript. Ces technologies permettent de créer des pages structurées, interactives et adaptées à tous les types d’écrans. Une attention particulière a été portée à l’expérience utilisateur, avec une navigation fluide et des contenus clairs.
+                        La page Cours et formations permet de consulter les différents cours sous forme de cartes interactives. Chaque carte affiche les informations principales du cours et propose un bouton En savoir plus qui ouvre une fenêtre détaillée avec la description complète et les informations sur l’intervenant. Les données sont chargées à partir d’un fichier JSON, ce qui facilite la mise à jour du contenu.
+                        Le site intègre également des fonctionnalités supplémentaires comme des filtres de recherche, un menu responsive et un assistant de discussion pour guider les utilisateurs.
+                        Ce projet permet de mettre en pratique les bases du développement web et de comprendre comment créer un site dynamique, structuré et évolutif.
                 </div>
 
                 <div class="aproposImage">
@@ -146,7 +149,7 @@
 
     <div id="chat" class="hidden">
 
-        <div id="chat-header">
+        <div id="chatEntete">
             Assistant EFREI
             <button id="fermerChat">✖</button>
         </div>
@@ -155,7 +158,7 @@
 
         <div id="chatZone">
             <input type="text" id="userZone" placeholder="Posez votre question..." />
-            <button id="send-btn">Envoyer</button>
+            <button id="boutonEnvoie">Envoyer</button>
         </div>
 
     </div>

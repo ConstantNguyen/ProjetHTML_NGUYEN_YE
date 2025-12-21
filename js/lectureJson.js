@@ -15,7 +15,7 @@ fetch('../json/liste-cours.json')
           <div class="carte-cours">
             <div class="recto">
               <div class="identite">
-                <img src="./../img/book-open-solid-full.svg" alt="Logo" draggable="false">
+                <img src="./../img/cours/${cours.image}" alt="Logo" draggable="false">
                 <span>${cours.titre}</span>
               </div>
               <div class="tags">

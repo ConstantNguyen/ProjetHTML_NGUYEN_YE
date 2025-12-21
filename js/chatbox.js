@@ -1,7 +1,7 @@
 const chatToggle = document.getElementById("chatbox");
 const chatContainer = document.getElementById("chat");
 const closeChat = document.getElementById("fermerChat");
-const sendBtn = document.getElementById("send-btn");
+const sendBtn = document.getElementById("boutonEnvoie");
 
 let intentsData = [];
 
