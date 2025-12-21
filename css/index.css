@@ -3,7 +3,7 @@ header {
 }
 
 body {
-  background-image: url('../img/Efrei_accueil_bg.jpg');
+  background-image: url('../img/Accueil/Efrei_accueil_bg.jpg');
 
 
   display: flex;
@@ -11,8 +11,16 @@ body {
   max-width: 100%;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
 body .container {
-  margin: 0px 4em 0 4em;
+  margin: 0 4em;
   padding: 200px 0 0 0;
   /* Permet à ce bloc de "pousser" le footer vers le bas */
   flex-grow: 1;
@@ -20,7 +28,7 @@ body .container {
 
 .content-flex {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .titrePage{  
@@ -32,7 +40,6 @@ body .container {
 .presentationDepartementInfo {
   flex: 0 0 50%;
   margin: 3em 10% 10em 0;
-  padding-top: 133px;
 }
 
 .presentationDepartementInfo h2{
@@ -47,7 +54,7 @@ body .container {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 90px;
   color: white;
   font-weight: 600;
 }
@@ -55,6 +62,7 @@ h1 {
 @media screen and (max-width: 1440px) {
   body .container {
     padding-top: 0;
+    margin-top: calc(var(--hh-header) + 40px); 
   }
 
   .content-flex {
@@ -123,5 +131,70 @@ h1 {
   }
   .presentationDepartementInfo p {
     font-size: 18px;
+  }
+}
+
+/* --- RÈGLES POUR TABLETTE (<= 768px) --- */
+@media screen and (max-width: 768px) {
+  .container {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: calc(var(--hh-header) + 30px);
+  }
+  
+  .content-flex {
+    /* flex-direction: column;
+    align-items: flex-start;
+    gap: 30px; */
+    display: block;
+    min-height: auto;
+  }
+
+  .titrePage h1 {
+    padding: 0;
+    font-size: 38px;
+  }
+
+  .presentationDepartementInfo {
+    padding: 0 0 0 40px;
+  }
+  
+  .presentationDepartementInfo h2 {
+    font-size: 28px;
+  }
+  
+  .presentationDepartementInfo p {
+    font-size: 16px;
+  }
+}
+
+/* --- RÈGLES POUR MOBILE (<= 425px) --- */
+@media screen and (max-width: 425px) {
+  .container {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: calc(var(--hh-header) + 20px);
+  }
+
+  .titrePage {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .titrePage h1 {
+    font-size: 30px;
+    width: 88%;
+  }
+
+  .presentationDepartementInfo {
+    padding-left: 0;
+  }
+  
+  .presentationDepartementInfo h2 {
+    font-size: 24px;
+  }
+  
+  .presentationDepartementInfo p {
+    font-size: 14px;
   }
 }

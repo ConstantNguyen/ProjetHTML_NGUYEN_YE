@@ -242,11 +242,30 @@ ul li {
     }
 }
 
+/* --- RÈGLES POUR TABLETTE (<= 768px) --- */
+@media screen and (max-width: 768px) {
+    header {
+        /* Réduire le padding latéral du header (initialement 150px) */
+        padding: 0 40px; 
+    }
+    
+    .menu-header {
+        /* Ajuster la largeur interne */
+        width: calc(100% - 80px); 
+    }
+
+    .logoEfrei {
+        /* Réduire la taille du logo */
+        width: 100px;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 660px) {
     header {
         padding: 0 50px;
     }
-
+    
     .menu-header {
         width: calc(100% - 2 * 50px);
     }
@@ -254,5 +273,21 @@ ul li {
     #HeaderResponsive {
         right: -100vw;
         width: 100vw;
+    }
+}
+
+/* --- RÈGLES POUR MOBILE (<= 425px) --- */
+@media screen and (max-width: 425px) {
+    header {
+        /* Réduire encore plus le padding latéral pour mobile */
+        padding: 0 20px;
+    }
+    
+    .menu-header {
+        width: calc(100% - 40px);
+    }
+
+    .logoEfrei {
+        width: 80px;
     }
 }

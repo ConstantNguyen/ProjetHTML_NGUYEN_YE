@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./css/cours.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/chatbox.css">
   <!-- fontawesome link -->
   <script src="https://kit.fontawesome.com/4d6659720c.js" crossorigin="anonymous"></script>
 </head>
@@ -24,7 +25,8 @@
       <!-- header logo -->
       <div class="header-brand">
         <span class="light">
-          <img src="./img/Efrei-logo-2025.svg" class="logoEfrei" />
+          <img src="./img/Efrei-logo-2025.svg" class="logoEfrei" alt="logo de l'Efrei">
+        </span>
       </div>
 
       <!-- header responsive -->
@@ -35,23 +37,31 @@
         <div class="navigation-onglets">
           <nav>
             <ul>
-              <a href = "pages/apropos.html"><li class="hover-underline-active"> <i class="fa-solid fa-circle-info"></i> A propos</li></a>
-              <a href = "index.html">
-                <li class="hover-underline-active">
+              <li class="hover-underline-active">
+                <a href = "pages/apropos.html">
+                  <i class="fa-solid fa-circle-info"></i> A propos
+                </a>
+              </li>
+              <li class="hover-underline-active">
+                <a href = "index.html">
                   <i class="fa-solid fa-house"></i> Accueil
-                </li>
-              </a>
-              <a href = "pages/coursFormations.html"><li class="hover-underline-active"> <i class="fa-solid fa-graduation-cap"></i> Cours et formations</li></a>
-              <a href = "pages/equipeEnseignante.html">
-                <li class="hover-underline-active">
+                </a>
+              </li>
+              <li class="hover-underline-active"> 
+                <a href = "pages/coursFormations.html">
+                  <i class="fa-solid fa-graduation-cap"></i> Cours et formations
+                </a>
+              </li>
+              <li class="hover-underline-active">
+                <a href = "pages/equipeEnseignante.html">
                   <i class="fa-solid fa-people-group"></i>  Equipe prédagogique
-                </li>
-              </a>
-              <a href = "pages/contact.html">
-                <li class="hover-underline-active"> 
+                </a>
+              </li>
+              <li class="hover-underline-active"> 
+                <a href = "pages/contact.html">
                   <i class="fa-solid fa-phone"></i> Contact
-                </li>
-              </a>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -61,6 +71,7 @@
       <div id="Biggachou"><span></span><span></span><span></span><span></span></div>
     </div>
   </header>
+  
   <div class="container">
     <div class="content-flex">
       <div class="titrePage">
@@ -113,6 +124,27 @@
         </div>
     </footer>
 
+  <button id="chatbox"> 
+    <i class="fa-solid fa-headset"></i>
+  </button>
+
+  <div id="chat" class="hidden">
+
+    <div id="chatEntete">
+      Assistant EFREI
+      <button id="fermerChat">✖</button>
+    </div>
+
+    <div id="chat-box"></div>
+
+    <div id="chatZone">
+      <input type="text" id="userZone" placeholder="Posez votre question...">
+      <button id="boutonEnvoie">Envoyer</button>
+    </div>
+
+  </div>
+
+  <script src="../js/chatbox.js" defer></script>
   <script src="./js/header.js"></script>
   <script src="./js/cours.js"></script>
   <script src="./js/footer.js"></script>

@@ -2,170 +2,205 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EFREI</title>
-    <link rel="icon" href="../img/logoOnglet.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EFREI</title>
+  <link rel="icon" href="../img/logoOnglet.png">
 
 
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/apropos.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/chatbox.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/apropos.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/chatbox.css">
 
 
 
-    <!-- fontawesome link -->
-    <script src="https://kit.fontawesome.com/4d6659720c.js" crossorigin="anonymous"></script>
+  <!-- fontawesome link -->
+  <script src="https://kit.fontawesome.com/4d6659720c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="menu-header">
-            <!-- header logo -->
-            <div class="header-brand">
-                <span class="light">
-                    <!--<i class="fa-solid fa-graduation-cap ic-wm-el-header"></i>EFREI</span><span class="bold"> PARIS</span>-->
-                    <img src="../img/Efrei-logo-2025.svg" class="logoEfrei" />
-            </div>
+  <header>
+    <div class="menu-header">
+      <!-- header logo -->
+      <div class="header-brand">
+        <span class="light">
+          <img src="../img/Efrei-logo-2025.svg" class="logoEfrei" alt="logo de l'Efrei">
+        </span>
+      </div>
 
-            <!-- header responsive -->
-            <div id="HeaderResponsive"></div>
+      <!-- header responsive -->
+      <div id="HeaderResponsive"></div>
 
-            <!-- header taille initiale -->
-            <div class="header-navigation" id="HeaderInitial">
-                <div class="navigation-onglets">
-                    <nav>
-                        <ul>
-                            <a href = "apropos.html"><li class="hover-underline-active"> <li class="hover-underline-active"> <i class="fa-solid fa-circle-info"></i> A propos</li></a>
-                            <a href = "../index.html"><li class="hover-underline-active"> <i class="fa-solid fa-house"></i> Accueil</li></a>
-                            <a href = "coursFormations.html"><li class="hover-underline-active"> <i class="fa-solid fa-graduation-cap"></i> Cours et formations</li></a>
-                            <a href = "equipeEnseignante.html"><li class="hover-underline-active"><i class="fa-solid fa-people-group"></i> Equipe prédagogique</li></a>
-                            <a href = "contact.html"><li class="hover-underline-active"> <i class="fa-solid fa-phone"></i> Contact</li></a>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
-            <!-- hambuger header responsive -->
-            <div id="Biggachou"><span></span><span></span><span></span><span></span></div>
+      <!-- header taille initiale -->
+      <div class="header-navigation" id="HeaderInitial">
+        <div class="navigation-onglets">
+          <nav>
+            <ul>
+              <li class="hover-underline-active">
+                <a href="./apropos.html">
+                  <i class="fa-solid fa-circle-info"></i> A propos
+                </a>
+              </li>
+              <li class="hover-underline-active">
+                <a href="../index.html">
+                  <i class="fa-solid fa-house"></i> Accueil
+                </a>
+              </li>
+              <li class="hover-underline-active">
+                <a href="./coursFormations.html">
+                  <i class="fa-solid fa-graduation-cap"></i> Cours et formations
+                </a>
+              </li>
+              <li class="hover-underline-active">
+                <a href="./equipeEnseignante.html">
+                  <i class="fa-solid fa-people-group"></i> Equipe prédagogique
+                </a>
+              </li>
+              <li class="hover-underline-active">
+                <a href="./contact.html">
+                  <i class="fa-solid fa-phone"></i> Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-    </header>
+      </div>
 
-    <div class="container">
-        <section class="apropos">
-            <div class="apropos-content">
-                <div class="aproposParagraphe">
-                    <h1 class="titrePage">À propos</h1>
-                    <p class="textePrincipal">
-                        Ce site web a été réalisé dans le cadre de notre projet en programmation web. Il a pour objectif de présenter les cours et formations proposés, ainsi que les enseignants qui les dispensent, à travers une interface moderne et facile à utiliser.
-                        Le site a été développé en utilisant HTML, CSS et JavaScript. Ces technologies permettent de créer des pages structurées, interactives et adaptées à tous les types d’écrans. Une attention particulière a été portée à l’expérience utilisateur, avec une navigation fluide et des contenus clairs.
-                        La page Cours et formations permet de consulter les différents cours sous forme de cartes interactives. Chaque carte affiche les informations principales du cours et propose un bouton En savoir plus qui ouvre une fenêtre détaillée avec la description complète et les informations sur l’intervenant. Les données sont chargées à partir d’un fichier JSON, ce qui facilite la mise à jour du contenu.
-                        Le site intègre également des fonctionnalités supplémentaires comme des filtres de recherche, un menu responsive et un assistant de discussion pour guider les utilisateurs.
-                        Ce projet permet de mettre en pratique les bases du développement web et de comprendre comment créer un site dynamique, structuré et évolutif.
-                </div>
+      <!-- hambuger header responsive -->
+      <div id="Biggachou"><span></span><span></span><span></span><span></span></div>
+    </div>
+  </header>
 
-                <div class="aproposImage">
-                    <img src="../img/imageAccueil.png" alt="image">
-                </div>
-            </div>
-        </section>
+  <div class="container">
+    <section class="apropos">
+      <div class="apropos-content">
+        <div class="aproposParagraphe">
+          <h1 class="titrePage">À propos</h1>
+          <p class="textePrincipal">
+            Ce site web a été réalisé dans le cadre de notre projet en programmation web. Il a pour objectif
+            de présenter les cours et formations proposés, ainsi que les enseignants qui les dispensent, à
+            travers une interface moderne et facile à utiliser.
+            Le site a été développé en utilisant HTML, CSS et JavaScript. Ces technologies permettent de
+            créer des pages structurées, interactives et adaptées à tous les types d’écrans. Une attention
+            particulière a été portée à l’expérience utilisateur, avec une navigation fluide et des contenus
+            clairs.
+            La page Cours et formations permet de consulter les différents cours sous forme de cartes
+            interactives. Chaque carte affiche les informations principales du cours et propose un bouton En
+            savoir plus qui ouvre une fenêtre détaillée avec la description complète et les informations sur
+            l’intervenant. Les données sont chargées à partir d’un fichier JSON, ce qui facilite la mise à
+            jour du contenu.
+            Le site intègre également des fonctionnalités supplémentaires comme des filtres de recherche, un
+            menu responsive et un assistant de discussion pour guider les utilisateurs.
+            Ce projet permet de mettre en pratique les bases du développement web et de comprendre comment
+            créer un site dynamique, structuré et évolutif.
+        </div>
 
-        <section class="membres">
-            <h2>Membres du projet</h2>
+        <div class="aproposImage">
+          <img src="../img/imageAccueil.png" alt="image">
+        </div>
+      </div>
+    </section>
+
+    <section class="membres">
+      <h2>Membres du projet</h2>
 
 
-            <div class="membresZone">
-                <div class="equipe">
-                    <div class="membreTexte">
-                        <h3>Constant NGUYEN</h3>
-                        <p>
-                            Page formations<br>
-                            Page "A propos"<br>
-                            Aide sur le code de manière générale (css, html, js)
-                        </p>
-                    </div>
-                    <img src="../img/Constant.webp" alt="image" class="imgMembre">
-                </div>
+      <div class="membresZone">
+        <div class="equipe">
+          <div class="membreTexte">
+            <h3>Constant NGUYEN</h3>
+            <p>
+              Page formations<br>
+              Page "A propos"<br>
+              Aide sur le code de manière générale (css, html, js)
+            </p>
+          </div>
+          <img src="../img/Constant.webp" alt="image" class="imgMembre">
+        </div>
 
-                <div class="equipe">
-                    <div class="membreTexte">
-                        <h3>Vick YE</h3>
-                        <p>
-                            Maquetage<br>
-                            Page Accueil<br>
-                            Aide sur le code de manière générale (css, html, js)<br>
-                            
-                        </p>
-                    </div>
-                    <img src="../img/Vick.jpg" alt="image" class="imgMembre">
-                </div>
-            </div>
-        </section>
+        <div class="equipe">
+          <div class="membreTexte">
+            <h3>Vick YE</h3>
+            <p>
+              Maquetage<br>
+              Page Accueil<br>
+              Aide sur le code de manière générale (css, html, js)<br>
 
+            </p>
+          </div>
+          <img src="../img/Vick.jpg" alt="image" class="imgMembre">
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <footer class="footer">
+    <hr class="traitFooter">
+    <div class="footerZoneBouton">
+      <button class="footerBouton">
+        <i class="fa-solid fa-cookie-bite"></i>
+        <span class="footerBoutonTexte">Préférence de consentement</span>
+      </button>
     </div>
 
+    <div class="footerCentrer">
+      <div class="footerTexteBlabla">
+        <p>© 2025 EFREI-Tous droits réservés</p>
+        <a href="https://www.efrei.fr/mentions-legales/" target="_blank">
+          <p class="hover-underline-active">Mentions légales</p>
+        </a>
+        <a href="https://www.efrei.fr/donnees-personnelles/" target="_blank">
+          <p class="hover-underline-active">Données personnelles</p>
+        </a>
+        <p>Cookies</p>
 
-    <footer class="footer">
-        <hr class="traitFooter">
-        <div class="footerZoneBouton">
-            <button class="footerBouton">
-                <i class="fa-solid fa-cookie-bite"></i>
-                <span class="footerBoutonTexte">Préférence de consentement</span>
-            </button>
-        </div>
-
-        <div class="footerCentrer">
-            <div class="footerTexteBlabla">
-                <p>© 2025 EFREI-Tous droits réservés</p>
-                <a href="https://www.efrei.fr/mentions-legales/" target="_blank"><p class="hover-underline-active">Mentions légales</p></a>
-                <a href="https://www.efrei.fr/donnees-personnelles/" target="_blank"><p class="hover-underline-active">Données personnelles</p></a>
-                <p>Cookies</p>
-                
-                <p class="langue">
-                    <span id="fr" class="langueChoix texteGras">FR</span> |
-                    <span id="en" class="langueChoix">EN</span> |
-                    <span id="cn" class="langueChoix">CN</span>
-                </p>
-            </div>
-            <div class="footerLogoReseaux">
-                <a href="https://www.facebook.com/EfreiParis/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://x.com/Efrei_Paris" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.youtube.com/efrei/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.instagram.com/efrei_paris/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/school/efrei/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://www.tiktok.com/@be.efrei" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.twitch.tv/efrei_?lang=fr" target="_blank"><i class="fa-brands fa-twitch"></i></a>
-            </div>
-        </div>
-    </footer>
+        <p class="langue">
+          <span id="fr" class="langueChoix texteGras">FR</span> |
+          <span id="en" class="langueChoix">EN</span> |
+          <span id="cn" class="langueChoix">CN</span>
+        </p>
+      </div>
+      <div class="footerLogoReseaux">
+        <a href="https://www.facebook.com/EfreiParis/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://x.com/Efrei_Paris" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.youtube.com/efrei/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/efrei_paris/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/efrei/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.tiktok.com/@be.efrei" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.twitch.tv/efrei_?lang=fr" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+      </div>
+    </div>
+  </footer>
 
 
-    <button id="chatbox">
-        <i class="fa-solid fa-headset"></i>
-    </button>
+  <button id="chatbox">
+    <i class="fa-solid fa-headset"></i>
+  </button>
 
-    <div id="chat" class="hidden">
+  <div id="chat" class="hidden">
 
-        <div id="chatEntete">
-            Assistant EFREI
-            <button id="fermerChat">✖</button>
-        </div>
-
-        <div id="chat-box"></div>
-
-        <div id="chatZone">
-            <input type="text" id="userZone" placeholder="Posez votre question..." />
-            <button id="boutonEnvoie">Envoyer</button>
-        </div>
-
+    <div id="chatEntete">
+      Assistant EFREI
+      <button id="fermerChat">✖</button>
     </div>
 
-    <script src="../js/chatbox.js" defer></script>
-    <script src="../js/header.js"></script>
-    <script src="../js/footer.js"></script>
+    <div id="chat-box"></div>
+
+    <div id="chatZone">
+      <input type="text" id="userZone" placeholder="Posez votre question...">
+      <button id="boutonEnvoie">Envoyer</button>
+    </div>
+
+  </div>
+
+  <script src="../js/chatbox.js" defer></script>
+  <script src="../js/header.js"></script>
+  <script src="../js/footer.js"></script>
 </body>
 
-</html>  
+</html>

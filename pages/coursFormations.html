@@ -20,26 +20,52 @@
 <body>
   <header>
     <div class="menu-header">
+      <!-- header logo -->
       <div class="header-brand">
         <span class="light">
-          <img src="../img/Efrei-logo-2025.svg" class="logoEfrei" />
+          <img src="../img/Efrei-logo-2025.svg" class="logoEfrei" alt="logo de l'Efrei">
+        </span>
       </div>
 
+      <!-- header responsive -->
       <div id="HeaderResponsive"></div>
+
+      <!-- header taille initiale -->
       <div class="header-navigation" id="HeaderInitial">
         <div class="navigation-onglets">
           <nav>
             <ul>
-              <a href = "apropos.html"><li class="hover-underline-active"> <li class="hover-underline-active"> <i class="fa-solid fa-circle-info"></i> A propos</li></a>
-              <a href = "../index.html"><li class="hover-underline-active"> <i class="fa-solid fa-house"></i> Accueil</li></a>
-              <a href = "coursFormations.html"><li class="hover-underline-active"> <i class="fa-solid fa-graduation-cap"></i> Cours et formations</li></a>
-              <a href = "equipeEnseignante.html"><li class="hover-underline-active"><i class="fa-solid fa-people-group"></i> Equipe prédagogique</li></a>
-              <a href = "contact.html"><li class="hover-underline-active"> <i class="fa-solid fa-phone"></i> Contact</li></a>
+              <li class="hover-underline-active">
+                <a href="./apropos.html">
+                  <i class="fa-solid fa-circle-info"></i> A propos
+                </a>
+              </li>
+              <li class="hover-underline-active">
+                <a href="../index.html">
+                  <i class="fa-solid fa-house"></i> Accueil
+                </a>
+              </li>
+              <li class="hover-underline-active">
+                <a href="./coursFormations.html">
+                  <i class="fa-solid fa-graduation-cap"></i> Cours et formations
+                </a>
+              </li>
+              <li class="hover-underline-active">
+                <a href="./equipeEnseignante.html">
+                  <i class="fa-solid fa-people-group"></i> Equipe prédagogique
+                </a>
+              </li>
+              <li class="hover-underline-active">
+                <a href="./contact.html">
+                  <i class="fa-solid fa-phone"></i> Contact
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
       </div>
 
+      <!-- hambuger header responsive -->
       <div id="Biggachou"><span></span><span></span><span></span><span></span></div>
     </div>
   </header>
@@ -57,7 +83,7 @@
         <div>
           <button class="btn-filtrer" id="btnRechercher">Rechercher</button>
         </div>
-        
+
       </div>
 
       <div class="liste-filtres">
@@ -74,82 +100,86 @@
         </div>
       </div>
       <div class="liste-cours" id="liste-cours">
-        
+
       </div>
     </div>
   </div>
 
 
   <footer class="footer">
-        <hr class="traitFooter">
-        <div class="footerZoneBouton">
-            <button class="footerBouton">
-                <i class="fa-solid fa-cookie-bite"></i>
-                <span class="footerBoutonTexte">Préférence de consentement</span>
-            </button>
-        </div>
-
-        <div class="footerCentrer">
-            <div class="footerTexteBlabla">
-                <p>© 2025 EFREI-Tous droits réservés</p>
-                <a href="https://www.efrei.fr/mentions-legales/" target="_blank"><p class="hover-underline-active">Mentions légales</p></a>
-                <a href="https://www.efrei.fr/donnees-personnelles/" target="_blank"><p class="hover-underline-active">Données personnelles</p></a>
-                <p>Cookies</p>
-                
-                <p class="langue">
-                    <span id="fr" class="langueChoix texteGras">FR</span> |
-                    <span id="en" class="langueChoix">EN</span> |
-                    <span id="cn" class="langueChoix">CN</span>
-                </p>
-            </div>
-            <div class="footerLogoReseaux">
-                <a href="https://www.facebook.com/EfreiParis/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://x.com/Efrei_Paris" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.youtube.com/efrei/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.instagram.com/efrei_paris/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/school/efrei/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://www.tiktok.com/@be.efrei" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.twitch.tv/efrei_?lang=fr" target="_blank"><i class="fa-brands fa-twitch"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <button id="chatbox">
-        <i class="fa-solid fa-headset"></i>
-    </button>
-
-    <div id="chat" class="hidden">
-        <div id="chatEntete">
-            Assistant EFREI
-            <button id="fermerChat">✖</button>
-        </div>
-        <div id="chat-box"></div>
-        <div id="chatZone">
-            <input type="text" id="userZone" placeholder="Posez votre question..." />
-            <button id="boutonEnvoie">Envoyer</button>
-        </div>
+    <hr class="traitFooter">
+    <div class="footerZoneBouton">
+      <button class="footerBouton">
+        <i class="fa-solid fa-cookie-bite"></i>
+        <span class="footerBoutonTexte">Préférence de consentement</span>
+      </button>
     </div>
 
-    <div id="popupZone" class="hidden">
-      <div id="modal">
-        <button id="fermerPopup">✖</button>
-        
-        <h2 id="moduleTitre" class="moduleTitreClass"></h2>
+    <div class="footerCentrer">
+      <div class="footerTexteBlabla">
+        <p>© 2025 EFREI-Tous droits réservés</p>
+        <a href="https://www.efrei.fr/mentions-legales/" target="_blank">
+          <p class="hover-underline-active">Mentions légales</p>
+        </a>
+        <a href="https://www.efrei.fr/donnees-personnelles/" target="_blank">
+          <p class="hover-underline-active">Données personnelles</p>
+        </a>
+        <p>Cookies</p>
 
-        <div class="moduleZone">
-          <div class="moduleProf">
-            <div class="moduleProfImg" id="moduleProfImg"></div>
-            <div class="moduleProfInfo">
-              <span id="moduleProfNom" class="profNom"></span>
-              <span id="module" class="profModule"></span>
-            </div>
+        <p class="langue">
+          <span id="fr" class="langueChoix texteGras">FR</span> |
+          <span id="en" class="langueChoix">EN</span> |
+          <span id="cn" class="langueChoix">CN</span>
+        </p>
+      </div>
+      <div class="footerLogoReseaux">
+        <a href="https://www.facebook.com/EfreiParis/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://x.com/Efrei_Paris" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.youtube.com/efrei/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/efrei_paris/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/efrei/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.tiktok.com/@be.efrei" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.twitch.tv/efrei_?lang=fr" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="chatbox">
+    <i class="fa-solid fa-headset"></i>
+  </button>
+
+  <div id="chat" class="hidden">
+    <div id="chatEntete">
+      Assistant EFREI
+      <button id="fermerChat">✖</button>
+    </div>
+    <div id="chat-box"></div>
+    <div id="chatZone">
+      <input type="text" id="userZone" placeholder="Posez votre question...">
+      <button id="boutonEnvoie">Envoyer</button>
+    </div>
+  </div>
+
+  <div id="popupZone" class="hidden">
+    <div id="modal">
+      <button id="fermerPopup">✖</button>
+
+      <h2 id="moduleTitre" class="moduleTitreClass"></h2>
+
+      <div class="moduleZone">
+        <div class="moduleProf">
+          <div class="moduleProfImg" id="moduleProfImg"></div>
+          <div class="moduleProfInfo">
+            <span id="moduleProfNom" class="profNom"></span>
+            <span id="module" class="profModule"></span>
           </div>
-          <div class="modulDescription">
-            <p id="modulDescription"></p>
-          </div>
+        </div>
+        <div class="modulDescription">
+          <p id="modulDescription"></p>
         </div>
       </div>
     </div>
+  </div>
 
 
 

@@ -130,7 +130,45 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 30px 40px;
+    }
 
+    .footerCentrer {
+        /* Permet aux blocs de passer à la ligne */
+        flex-wrap: wrap; 
+        justify-content: flex-start; /* Aligner à gauche */
+        gap: 30px;
+    }
+    
+    .footerTexteBlabla {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .footerLogoReseaux {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+}
+
+/* --- RÈGLES POUR MOBILE (<= 425px) --- */
+@media screen and (max-width: 425px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footerCentrer {
+        gap: 20px;
+    }
+    
+    .footerLogoReseaux a {
+        font-size: 20px; /* Agrandir les icônes pour le touch */
+    }
+}
 
 
 
